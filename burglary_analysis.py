@@ -21,6 +21,26 @@ def perform_eda(df):
     """Perform exploratory data analysis on burglary cases"""
     print("\n=== Exploratory Data Analysis ===")
     
+    # Display first 5 rows in a formatted table
+    print("\nFirst 5 rows of data:")
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.width', None)
+    pd.set_option('display.max_colwidth', None)
+    pd.set_option('display.colheader_justify', 'left')
+    pd.set_option('display.precision', 2)
+    
+    # Create a nicely formatted table
+    print("\n" + "="*100)
+    print(df.head(5).to_string(index=False))
+    print("="*100 + "\n")
+    
+    # Reset display options
+    pd.reset_option('display.max_columns')
+    pd.reset_option('display.width')
+    pd.reset_option('display.max_colwidth')
+    pd.reset_option('display.colheader_justify')
+    pd.reset_option('display.precision')
+    
     # Basic information
     print("\n1. Basic Information:")
     print(f"Number of records: {len(df)}")
@@ -44,13 +64,23 @@ def perform_eda(df):
     # Crime type distribution
     print("\n5. Crime Type Distribution:")
     print(df['Crime type'].value_counts())
-    
+
+    #Falls within Distribution and Reported by Analysis
+    print("\n6. Falls within Distribution:")
+    print(df['Falls within'].value_counts())
+    print("\n8. Reported by Analysis:")
+    print(df['Reported by'].value_counts())
+    if df['Reported by'].value_counts().equals(df['Falls within'].value_counts()):
+        print('All crimes were both reported to and occurred in the same forces')
+    else:
+        print('There are some mismatches between reporting force and jurisdiction')
+
     # Last outcome category analysis
-    print("\n6. Last Outcome Category Analysis:")
+    print("\n7. Last Outcome Category Analysis:")
     print(df['Last outcome category'].value_counts())
     
     # Temporal analysis
-    print("\n7. Temporal Analysis:")
+    print("\n8. Temporal Analysis:")
     df['Month'] = pd.to_datetime(df['Month'])
     monthly_counts = df['Month'].dt.to_period('M').value_counts().sort_index()
     print("\nMonthly Burglary Counts:")
@@ -68,17 +98,18 @@ def preprocess_data(df):
     # Extract temporal features
     df['Year'] = df['Month'].dt.year
     df['Month_num'] = df['Month'].dt.month
-    
-    # Handle missing values
+
+    # Handle missing values(putting median for numerical values and unknown for categorical values)
     print("\nHandling missing values...")
     for col in df.columns:
         missing_count = df[col].isnull().sum()
         if missing_count > 0:
             print(f"Column '{col}' has {missing_count} missing values")
             if df[col].dtype in ['float64', 'int64']:
-                df[col].fillna(df[col].median(), inplace=True)
+                df[col] = df[col].fillna(df[col].median())
+
             else:
-                df[col].fillna('Unknown', inplace=True)
+                df[col]= df[col].fillna('Unknown')
     
     # Print final shape and columns
     print(f"\nFinal data shape: {df.shape}")
@@ -91,28 +122,25 @@ def calculate_effectiveness_metrics(df):
     """Calculate metrics for measuring police demand and effectiveness"""
     print("\n=== Calculating Effectiveness Metrics ===")
     
-    # 1. Response Time Analysis (if available)
+    # 1. Counting the number of reports per force per month
     if 'Reported by' in df.columns and 'Month' in df.columns:
-        response_times = df.groupby('Reported by')['Month'].count()
-        print("\nBurglary Reports per Police Force:")
-        print(response_times)
+        print("\nBurglary Reports per Police Force per month:")
+        report_per_month = df.groupby(['Reported by', 'Month']).size()
+        print(report_per_month)
     
-    # 2. Clearance Rate Analysis
-    clearance_rate = (df['Last outcome category'] != 'Unknown').mean() * 100
+    # 2. Clearance Rate Analysis(counting the cases that have been cleared which is not unknown(status update unavailable,court result unavailable,action to be taken by another organisation),counting the total cases,calculating the avg of boolean values.
+    unresolved_statuses = ['Status update unavailable', 'Court result unavailable', 'Action to be taken by another organisation']
+    clearance_rate = (~df['Last outcome category'].isin(unresolved_statuses)).mean() * 100
     print(f"\nOverall Clearance Rate: {clearance_rate:.2f}%")
+
     
-    # 3. Last Outcome Category Distribution
-    print("\nLast Outcome Category Distribution:")
-    outcome_counts = df['Last outcome category'].value_counts()
-    print(outcome_counts)
-    
-    # 4. Geographic Hotspot Analysis
+    # 3. Geographic Hotspot Analysis
     if 'LSOA code' in df.columns:
         hotspot_analysis = df.groupby('LSOA code').size().sort_values(ascending=False)
         print("\nTop 10 High-Demand Areas:")
         print(hotspot_analysis.head(10))
     
-    # 5. Temporal Patterns
+    # 4. Temporal Patterns
     print("\nMonthly Patterns:")
     monthly_patterns = df.groupby(['Year', 'Month_num']).size()
     print(monthly_patterns)
@@ -129,9 +157,10 @@ def create_effectiveness_visualizations(df):
     
     # 1. Monthly Burglary Trends with Clearance Rates
     plt.figure(figsize=(15, 8))
+    unresolved_statuses = ['Status update unavailable', 'Court result unavailable', 'Action to be taken by another organisation']
     monthly_data = df.groupby('Month').agg({
         'Crime ID': 'count',
-        'Last outcome category': lambda x: (x != 'Unknown').mean() * 100
+        'Last outcome category': lambda x: (~x.isin(unresolved_statuses)).mean() * 100
     }).reset_index()
     
     ax1 = plt.gca()
@@ -143,6 +172,8 @@ def create_effectiveness_visualizations(df):
     ax1.set_xlabel('Month')
     ax1.set_ylabel('Number of Burglaries', color='b')
     ax2.set_ylabel('Clearance Rate (%)', color='r')
+    ax1.legend(loc='upper left')
+    ax2.legend(loc='upper right')
     plt.title('Monthly Burglary Trends and Clearance Rates')
     plt.xticks(rotation=45)
     plt.tight_layout()

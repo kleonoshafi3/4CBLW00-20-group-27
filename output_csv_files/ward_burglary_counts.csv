@@ -1,0 +1,766 @@
+Ward Name,Burglary Count
+Unknown,7678
+West End,1576
+Marylebone,1131
+St James's,1058
+Kilburn,954
+Bloomsbury,805
+Holborn & Covent Garden,721
+Childs Hill,678
+Lea Bridge,676
+Hoxton East & Shoreditch,653
+Borough & Bankside,632
+Walbrook,620
+Regent's Park,619
+Highgate,610
+Bethnal Green West,605
+Edgware,588
+Bayswater,585
+Lancaster Gate,572
+Rye Lane,546
+Spitalfields & Banglatown,532
+Bethnal Green East,530
+Bunhill,515
+London Bridge & West Bermondsey,507
+Rushey Green,503
+Brockley,502
+Chaucer,498
+Deptford,481
+Hendon,479
+Waterloo & South Bank,455
+Edmonton Green,453
+Bow East,440
+Northumberland Park,438
+London Fields,437
+Dollis Hill,436
+Stratford,434
+Canary Wharf,430
+Queens Park,426
+Village,423
+South Bermondsey,423
+Burnt Oak,420
+Hyde Park,415
+Lansbury,409
+Balham,408
+Whitechapel,403
+Fairfield,401
+Junction,401
+Upper Edmonton,400
+Weavers,399
+Brimsdown,398
+South Acton,395
+Cricklewood & Mapesbury,395
+West Hendon,394
+Penge & Cator,392
+North Acton,392
+Tollington,391
+Woodside,390
+Clapham Town,389
+Finchley Church End,388
+Mile End,385
+North Bermondsey,380
+Heaton,378
+Homerton,378
+Cricklewood,377
+Broad Green,375
+Harlesden & Kensal Green,373
+Hackney Central,372
+West Finchley,371
+Lavender,370
+Brixton Windrush,368
+Brompton & Hans Town,367
+Southall Green,366
+Hoxton West,365
+Finsbury Park,362
+Purley & Woodcote,362
+Clerkenwell,362
+Dalston,359
+Greenwich Peninsula,357
+Brixton Acre Lane,356
+Battersea Park,354
+Tooting Broadway,354
+Willesden Green,353
+Perry Vale,353
+South Richmond,351
+Hillrise,347
+Stonebridge,346
+West Hampstead,345
+Brixton North,345
+Earl's Court,344
+Belsize,344
+Uxbridge,344
+Church Street,342
+Streatham St Leonard's,341
+Hackney Downs,340
+Brondesbury Park,339
+East Ham,337
+St Pancras & Somers Town,337
+Noel Park,337
+North Walworth,335
+Wandsworth Town,334
+Enfield Lock,333
+Whitewebbs,333
+Redcliffe,331
+Herne Hill & Loughborough Junction,331
+West Thornton,330
+Laycock,330
+Chiswick Gunnersbury,329
+Ealing Common,329
+Victoria,328
+St Paul's Cray,328
+Crouch End,328
+Golders Green,328
+Friern Barnet,328
+Heathrow Villages,325
+Maida Vale,325
+South Tottenham,324
+Blackheath,324
+East Putney,323
+Hayes Town,323
+Town,320
+Faraday,319
+Hither Green,317
+Chiswick Homefields,315
+Coningham,315
+Holloway,314
+Sydenham,312
+Bow West,312
+Totteridge & Woodside,310
+St Peter's & Canalside,309
+Hackney Wick,308
+St Mary's,307
+Pimlico North,307
+Waddon,307
+Plumstead & Glyndon,305
+Haggerston,304
+St Mary's & St James',301
+Hanger Hill,300
+Tottenham Central,300
+Forest Gate South,298
+Colville,298
+Pinkwell,298
+De Beauvoir,297
+Knightsbridge & Belgravia,297
+Greenhill,295
+Newington,292
+Springfield,292
+Rotherhithe,291
+King's Cross,290
+Primrose Hill,289
+South Hampstead,289
+St Katharine's & Wapping,288
+Hoe Street,286
+Selhurst,285
+Gospel Oak,285
+Southall Broadway,285
+Addiscombe West,285
+Stockwell West & Larkhall,284
+Kennington,284
+Roundwood,283
+Hanwell Broadway,283
+St Giles,282
+Nunhead & Queen's Road,282
+Southbury,282
+Campden,282
+Lower Edmonton,281
+Fortune Green,281
+Clapham East,280
+Shepherd's Bush Green,280
+Gooshays,280
+Stratford Olympic Park,279
+Syon & Brentford Lock,278
+Ilford Town,278
+Beckenham Town & Copers Cope,278
+Thamesfield,277
+Westbourne,277
+Plaistow West & Canning Town East,276
+Bromley Town,275
+Leyton,275
+Catford South,274
+Canning Town North,273
+Abbey,272
+Harringay,272
+Old Kent Road,271
+Welsh Harp,271
+Streatham Hill West & Thornton,269
+Abbey Road,268
+Wood End,268
+Ponders End,268
+Downham,266
+Haverstock,266
+Churchfields,265
+East Finchley,264
+Blackwall & Cubitt Town,264
+Mortlake & Barnes Common,264
+Camberwell Green,264
+Valley,263
+Arsenal,263
+Mill Hill,262
+Fulham Reach,262
+South Croydon,261
+Haselbury,261
+Jubilee,261
+Stanley,260
+Queensbury,259
+Bromley North,258
+St Mary Cray,258
+East Acton,258
+Perivale,258
+Golborne,258
+Eltham Town & Avery Hill,257
+Feltham North,257
+Stanmore,257
+Wanstead Village,257
+Abbey Wood,256
+Wandsworth Common,256
+Brunswick Park,256
+Barnet Vale,255
+Clapham Common & Abbeville,255
+Heston West,255
+Eastbury,255
+High Street,255
+Peckham,255
+Fortis Green,254
+Woolwich Arsenal,253
+Clissold,253
+Stoke Newington,253
+Queen's Park,251
+Roehampton,251
+West Putney,251
+Ealing Broadway,251
+Osterley & Spring Grove,251
+Seven Kings,250
+New Cross Gate,248
+Woolwich Common,248
+Camden Town,246
+Falconbrook,246
+Kingston Town,246
+Tottenham Hale,244
+Norwood Green,244
+Belmont,244
+Plaistow South,243
+Tufnell Park,243
+Highbury,243
+Arnos Grove,243
+Canonbury,242
+Barnsbury,242
+College Park & Old Oak,242
+Telegraph Hill,241
+Carterhatch,240
+Cann Hall,239
+Feltham West,239
+Hornsey,239
+Surrey Docks,238
+Courtfield,237
+Garden Suburb,237
+Goose Green,237
+Pembridge,237
+Harrow Road,235
+East Sheen,235
+Walham Green,235
+White Hart Lane,234
+Munster,234
+Queen's Gate,234
+Hanworth Village,234
+Brixton Rush Common,233
+Little Venice,232
+Plaistow North,231
+St Martin's,231
+West Drayton,231
+Norbury & Pollards Hill,230
+Chislehurst,230
+Shacklewell,230
+South Norwood,229
+Forest Hill,229
+Holland,229
+Caledonian,229
+Colham & Cowley,229
+Plumstead Common,227
+Woolwich Dockyard,226
+Streatham Common & Vale,226
+King's Park,225
+Knight's Hill,225
+Royal Hospital,224
+Woodhouse,224
+Stroud Green,224
+Mildmay,223
+Wandle,223
+Kew,223
+Tooting Bec,223
+Woodberry Down,222
+Winchmore Hill,222
+Ladywell,221
+Greenwich Creekside,221
+Belvedere,221
+Vauxhall,220
+Loxford,220
+Erith,220
+Custom House,219
+Walpole,218
+Furzedown,218
+East Greenwich,218
+Roxeth,217
+Shadwell,216
+Grove,216
+Leytonstone,216
+Kentish Town South,216
+Crofton Park,215
+West Green,215
+South Ruislip,214
+Heston Central,214
+Rush Green & Crowlands,213
+Vincent Square,213
+Beckton,212
+St Edward's,212
+Royal Victoria,212
+Fulham Town,212
+Cockfosters,212
+Bush Hill Park,212
+Whetstone,211
+Little Ilford,211
+Orpington,211
+Lee Green,211
+Whalebone,211
+East Barnet,210
+St Dunstan's,210
+Barnes,210
+Boleyn,209
+Kenton,209
+Trinity,208
+Kelsey & Eden Park,208
+Valence,208
+Farringdon Without,208
+Harrow Weald,208
+Alperton,208
+Cricket Green,206
+Cranford,206
+Hounslow West,206
+Northolt Mandeville,206
+Greenford Broadway,205
+Goodmayes,205
+Barking Riverside,203
+Thornton Heath,203
+Hounslow Central,202
+North Greenford,202
+Stepney Green,202
+Harold Wood,201
+Bedfont,201
+Blackheath Westcombe,201
+Edgwarebury,201
+Palmers Green,201
+Bullsmoor,201
+Clementswood,201
+Larkswood,200
+West Hill,200
+Bruce Castle,200
+Northwood,199
+Belmore,199
+West Kensington,198
+Thamesmead East,198
+East Ham South,198
+Lewisham Central,198
+Dulwich Village,196
+Pitshanger,196
+Crystal Palace & Anerley,196
+Manor Park,195
+Wimbledon Park,195
+Aldborough,194
+Colindale South,194
+St Ann's,194
+St George's,194
+Hounslow Heath,193
+Highfield,193
+Frognal,192
+Southfield,192
+William Morris,191
+Green Street West,190
+Central Greenford,190
+Mayesbrook,190
+West Ham,189
+Headstone,189
+Evelyn,188
+Clapham Park,187
+Crystal Palace & Upper Norwood,187
+Shaftesbury & Queenstown,187
+Hanworth Park,187
+Chapel End,185
+Marshalls & Rise Park,185
+Stockwell East,185
+Bellingham,185
+Fullwell,184
+Ruislip,184
+Seven Sisters,184
+Beam Park,183
+Bexleyheath,183
+Northwood Hills,183
+Cranbrook,182
+Grove Park,182
+Rainham & Wennington,182
+Heston East,182
+Eastcote,181
+Chelsea Riverside,181
+Dulwich Wood,181
+Bromley Common & Holwood,180
+Abingdon,180
+Addiscombe East,179
+Greenwich Park,179
+St James,179
+Teddington,179
+Southgate,178
+South Woodford,178
+St Margarets & North Twickenham,178
+Sidcup,178
+Hammersmith Broadway,178
+Bickley & Sundridge,178
+Wembley Hill,177
+Norland,177
+Kentish Town North,177
+Elm Park,177
+Oval,175
+South Balham,175
+Chadwell,174
+Crook Log,174
+Cazenove,174
+Higham Hill,174
+Brook Green,173
+High Barnet,173
+Bensham Manor,172
+Squirrels Heath,172
+Hainault,172
+Clock House,172
+Wallington South,172
+Muswell Hill,171
+Dormers Wells,170
+Yiewsley,170
+Forest,170
+Northbury,170
+Pinner,170
+Gipsy Hill,170
+Slade Green & Northend,169
+Palace & Hurlingham,169
+Canning Town South,169
+Notting Dale,168
+Hampstead Town,168
+Maryland,168
+Brownswood,167
+Wealdstone South,167
+"Ham, Petersham & Richmond Riverside",165
+North Richmond,165
+Clayhall,165
+Northolt West End,165
+St Andrew's,165
+Parsloes,165
+Ravenscourt,164
+Park Hill & Whitgift,164
+Heathfield,164
+Limehouse,163
+Twickenham Riverside,163
+Kidbrooke Village & Sutcliffe,163
+Grove Green,162
+Green Street East,162
+Barkingside,162
+Hounslow East,162
+Sanderstead,161
+Mawneys,161
+Hampton Wick & South Teddington,161
+Sutton Central,161
+Myatt's Fields,161
+Addison,160
+Cheam,160
+Hayes & Coney Hall,159
+Northcote,159
+Chadwell Heath,159
+Lady Margaret,159
+New Malden Village,159
+Ridgeway,159
+West Wickham,158
+Wealdstone North,157
+Nine Elms,156
+Plaistow,156
+Upminster,156
+Kidbrooke Park,156
+Yeading,155
+Sands End,155
+Colindale North,155
+Forest Gate North,155
+Hampton,155
+Falconwood & Welling,155
+Bromley South,154
+Mayfield,154
+Wood Street,154
+Cathall,154
+Wembley Central,154
+Hampton North,154
+Sutton South,153
+Shortlands & Park Langley,153
+Beam,153
+Pinner South,153
+Havering-atte-Bower,153
+Streatham Hill East,153
+Dulwich Hill,153
+Colliers Wood,153
+Royal Albert,152
+Surbiton Hill,152
+St Helier West,152
+Raynes Park,152
+Fairlop,152
+Valentines,152
+Wembley Park,152
+Petts Wood & Knoll,150
+Northfield,150
+North Hanwell,149
+Longthornton,146
+Lavender Fields,146
+Mottingham,145
+Parsons Green & Sandford,145
+Crayford,144
+Avonmore,144
+Sutton West & East Cheam,143
+Norbiton,143
+East Wickham,143
+South Beddington & Roundshaw,143
+Wallington North,142
+New Southgate,142
+Barnhill,142
+Kingsbury,142
+Chiswick Riverside,141
+Dalgarno,141
+St Alban's,141
+Selsdon & Addington Village,141
+Carshalton Central,140
+West Dulwich,140
+Beddington,140
+Alexandra Park,140
+St. Helen's,140
+Grange Park,139
+West Barnes,138
+Graveney,137
+Southfields,137
+Gascoigne,137
+Wimbledon Town & Dundonald,136
+Farnborough & Crofton,136
+Purley Oaks & Riddlesdown,136
+St Mark's & Seething Wells,136
+South Twickenham,135
+Brentford East,135
+The Wrythe,134
+Bridge,134
+Shirley North,133
+Chelsfield,133
+Kenton East,132
+Longbridge,132
+New Addington South,131
+Harrow on the Hill,130
+Isleworth,129
+Camden Square,129
+Pimlico South,129
+Island Gardens,129
+Peckham Rye,128
+Coombe Vale,128
+Hillingdon East,128
+St Helier,127
+Hillside,126
+Hylands & Harrow Lodge,125
+West Twickenham,125
+West Thamesmead,124
+Hatch End,124
+Sutton North,123
+Ickenham & South Harefield,123
+Shooters Hill,123
+Heath,122
+Coombe Hill,122
+Fulwell & Hampton Hill,122
+Carshalton South & Clockhouse,122
+Stonecot,121
+Tolworth,121
+Upper Walthamstow,121
+Brentford West,120
+Chingford Green,120
+Kingston Gate,119
+Bounds Green,119
+Wall End,117
+St Mary's & St James,117
+Eltham Park & Progress,116
+Canbury Gardens,116
+Portsoken,116
+Coulsdon Town,116
+Stamford Hill West,115
+Oakwood,114
+Wormholt,114
+Centenary,114
+Marlborough,114
+Newbury,113
+Whitton,113
+Kenley,113
+Lower Morden,113
+Goresbrook,112
+Thamesmead Moorings,112
+Hillingdon West,112
+Merton Park,112
+West Heath,110
+Charlton Village & Riverside,110
+Hounslow South,110
+Becontree,109
+Worcester Park North,108
+Charlton Hornfair,108
+Monkhams,108
+Charville,107
+Northumberland Heath,106
+Wanstead Park,106
+South Hornchurch,106
+Bowes,105
+Figge's Marsh,105
+Streatham Wells,104
+Eltham Page,104
+Blendon & Penhill,103
+Hermitage & Gardens,101
+Alibon,101
+Poplar,101
+Hale End & Highams Park South,101
+"Mottingham, Coldharbour & New Eltham",100
+Hatch Lane & Highams Park North,99
+White City,99
+Preston,99
+Underhill,99
+Tokyngton,94
+Ravensbury,94
+Selsdon Vale & Forestdale,93
+Sudbury,92
+Rayners Lane,91
+Northwick Park,90
+Worcester Park South,90
+Shirley South,90
+Endlebury,90
+West Harrow,89
+Tudor,87
+Biggin Hill,86
+Motspur Park & Old Malden East,86
+Champion Hill,85
+Middle Park & Horn Park,85
+Canons,85
+Emerson Park,84
+Roxbourne,84
+Old Coulsdon,83
+Cannon Hill,83
+Longlands,82
+North Harrow,81
+Pollards Hill,81
+Hackbridge,81
+Lillie,79
+Harefield Village,79
+Cranham,76
+New Addington North,75
+Eastbrook & Rush Green,74
+North Cheam,74
+Norbury Park,73
+Markhouse,72
+Kenton West,70
+Plashet,70
+Blackfen & Lamorbey,69
+Darwin,66
+Cripplegate,66
+King George's & Sunray,66
+St Helier East,65
+Alexandra,64
+Thames View,64
+Ruislip Manor,60
+Hook & Chessington North,57
+Berrylands,57
+Wendell Park,56
+Barnehurst,56
+Green Lane & St James,55
+Old Malden,53
+Chessington South & Malden Rushett,53
+Hacton,50
+Southall West,38
+Aldersgate,24
+Long Ditton,9
+Grange Hill,8
+Stoneleigh,5
+Waltham Cross,5
+Rickmansworth Town,4
+Cuddington,4
+Waltham Abbey West,3
+Theydon Bois with Passingford,3
+Denham,3
+Central,3
+Waltham Abbey South & Rural,2
+Ashford North and Stanwell South,2
+Ockendon,2
+Aveley and Uplands,2
+Warley,2
+Castle,2
+Chigwell with Lambourne,2
+Ashdown,2
+Crockenhill and Well Hill,2
+Tewkesbury North & Twyning,1
+Grays Riverside,1
+Dallow,1
+Langley Meads,1
+Oxton,1
+Auriol,1
+Chalvey,1
+Broad Oak & the Hallingburys,1
+Central Harbour,1
+Somerton,1
+Banstead Village,1
+Dickinsons,1
+Goffs Oak,1
+Swanley St Mary's,1
+Bush Fair,1
+Alvaston North,1
+Oatlands and Burwood Park,1
+Hotham,1
+East Cliff & Springbourne,1
+Standish with Langtree,1
+Round Green,1
+Prittlewell,1
+Moulsecoomb & Bevendean,1
+Burnham,1
+Queens Park & Central,1
+Westerham and Crockham Hill,1
+Downhall and Rawreth,1
+Tattenham Corner & Preston,1
+Ashford East,1
+Colnbrook & Poyle,1
+Cleeve Hill,1
+Nonsuch,1
+Bircham with Rudhams,1
+Wingrove,1
+Potters Bar Furzefield,1
+Woodford and Weedon,1
+Leverstock Green,1
+Shenley,1
+Molyneux,1
+Leatherhead North,1
+East Tilbury,1
+Nork,1
+Staines South,1
+Sunbury Common,1
+Bolsover South,1
+Iver,1
+Piccadilly,1
+Greenstead,1
+Molesey West,1
+Molesey East,1
+Roydon & Lower Nazeing,1
+Bushey North,1
+West Middleton,1
+"Wilmington, Sutton-at-Hone & Hawley",1
+Pensby and Thingwall,1
+Sunbury East,1
+Ashford Town,1
+Westgate,1
+Irchester,1
+Basildon,1
+Dorchester East,1
+Buckhurst Hill East & Whitebridge,1
+"Chipstead, Kingswood & Woodmansterne",1
+Aldenham East,1
+Temple Hill,1
+Burrsville,1
+Brentwood North,1
+Pleck,1
+Chalfont St Giles,1
+Newtown,1
+Waltham Abbey North,1

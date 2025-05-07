@@ -1,0 +1,765 @@
+Ward Name,Burglary Count,Burglary Band
+West End,1576,Band 10
+Marylebone,1131,Band 9
+St James's,1058,Band 9
+Kilburn,954,Band 9
+Bloomsbury,805,Band 8
+Holborn & Covent Garden,721,Band 8
+Childs Hill,678,Band 8
+Lea Bridge,676,Band 8
+Hoxton East & Shoreditch,653,Band 8
+Borough & Bankside,632,Band 8
+Walbrook,620,Band 8
+Regent's Park,619,Band 8
+Highgate,610,Band 8
+Bethnal Green West,605,Band 8
+Edgware,588,Band 8
+Bayswater,585,Band 8
+Lancaster Gate,572,Band 8
+Rye Lane,546,Band 8
+Spitalfields & Banglatown,532,Band 8
+Bethnal Green East,530,Band 8
+Bunhill,515,Band 7
+London Bridge & West Bermondsey,507,Band 7
+Rushey Green,503,Band 7
+Brockley,502,Band 7
+Chaucer,498,Band 7
+Deptford,481,Band 7
+Hendon,479,Band 7
+Waterloo & South Bank,455,Band 7
+Edmonton Green,453,Band 7
+Bow East,440,Band 7
+Northumberland Park,438,Band 7
+London Fields,437,Band 7
+Dollis Hill,436,Band 7
+Stratford,434,Band 7
+Canary Wharf,430,Band 7
+Queens Park,426,Band 7
+Village,423,Band 7
+South Bermondsey,423,Band 7
+Burnt Oak,420,Band 7
+Hyde Park,415,Band 7
+Lansbury,409,Band 7
+Balham,408,Band 7
+Whitechapel,403,Band 7
+Fairfield,401,Band 7
+Junction,401,Band 7
+Upper Edmonton,400,Band 7
+Weavers,399,Band 7
+Brimsdown,398,Band 7
+South Acton,395,Band 7
+Cricklewood & Mapesbury,395,Band 7
+West Hendon,394,Band 7
+Penge & Cator,392,Band 7
+North Acton,392,Band 7
+Tollington,391,Band 7
+Woodside,390,Band 7
+Clapham Town,389,Band 7
+Finchley Church End,388,Band 7
+Mile End,385,Band 7
+North Bermondsey,380,Band 6
+Heaton,378,Band 6
+Homerton,378,Band 6
+Cricklewood,377,Band 6
+Broad Green,375,Band 6
+Harlesden & Kensal Green,373,Band 6
+Hackney Central,372,Band 6
+West Finchley,371,Band 6
+Lavender,370,Band 6
+Brixton Windrush,368,Band 6
+Brompton & Hans Town,367,Band 6
+Southall Green,366,Band 6
+Hoxton West,365,Band 6
+Finsbury Park,362,Band 6
+Purley & Woodcote,362,Band 6
+Clerkenwell,362,Band 6
+Dalston,359,Band 6
+Greenwich Peninsula,357,Band 6
+Brixton Acre Lane,356,Band 6
+Battersea Park,354,Band 6
+Tooting Broadway,354,Band 6
+Willesden Green,353,Band 6
+Perry Vale,353,Band 6
+South Richmond,351,Band 6
+Hillrise,347,Band 6
+Stonebridge,346,Band 6
+West Hampstead,345,Band 6
+Brixton North,345,Band 6
+Earl's Court,344,Band 6
+Belsize,344,Band 6
+Uxbridge,344,Band 6
+Church Street,342,Band 6
+Streatham St Leonard's,341,Band 6
+Hackney Downs,340,Band 6
+Brondesbury Park,339,Band 6
+East Ham,337,Band 6
+St Pancras & Somers Town,337,Band 6
+Noel Park,337,Band 6
+North Walworth,335,Band 6
+Wandsworth Town,334,Band 6
+Enfield Lock,333,Band 6
+Whitewebbs,333,Band 6
+Redcliffe,331,Band 6
+Herne Hill & Loughborough Junction,331,Band 6
+West Thornton,330,Band 6
+Laycock,330,Band 6
+Chiswick Gunnersbury,329,Band 6
+Ealing Common,329,Band 6
+Victoria,328,Band 6
+St Paul's Cray,328,Band 6
+Crouch End,328,Band 6
+Golders Green,328,Band 6
+Friern Barnet,328,Band 6
+Heathrow Villages,325,Band 6
+Maida Vale,325,Band 6
+South Tottenham,324,Band 6
+Blackheath,324,Band 6
+East Putney,323,Band 6
+Hayes Town,323,Band 6
+Town,320,Band 6
+Faraday,319,Band 6
+Hither Green,317,Band 6
+Chiswick Homefields,315,Band 6
+Coningham,315,Band 6
+Holloway,314,Band 6
+Sydenham,312,Band 6
+Bow West,312,Band 6
+Totteridge & Woodside,310,Band 6
+St Peter's & Canalside,309,Band 6
+Hackney Wick,308,Band 6
+St Mary's,307,Band 6
+Pimlico North,307,Band 6
+Waddon,307,Band 6
+Plumstead & Glyndon,305,Band 6
+Haggerston,304,Band 6
+St Mary's & St James',301,Band 5
+Hanger Hill,300,Band 5
+Tottenham Central,300,Band 5
+Forest Gate South,298,Band 5
+Colville,298,Band 5
+Pinkwell,298,Band 5
+De Beauvoir,297,Band 5
+Knightsbridge & Belgravia,297,Band 5
+Greenhill,295,Band 5
+Newington,292,Band 5
+Springfield,292,Band 5
+Rotherhithe,291,Band 5
+King's Cross,290,Band 5
+Primrose Hill,289,Band 5
+South Hampstead,289,Band 5
+St Katharine's & Wapping,288,Band 5
+Hoe Street,286,Band 5
+Selhurst,285,Band 5
+Gospel Oak,285,Band 5
+Southall Broadway,285,Band 5
+Addiscombe West,285,Band 5
+Stockwell West & Larkhall,284,Band 5
+Kennington,284,Band 5
+Roundwood,283,Band 5
+Hanwell Broadway,283,Band 5
+St Giles,282,Band 5
+Nunhead & Queen's Road,282,Band 5
+Southbury,282,Band 5
+Campden,282,Band 5
+Lower Edmonton,281,Band 5
+Fortune Green,281,Band 5
+Clapham East,280,Band 5
+Shepherd's Bush Green,280,Band 5
+Gooshays,280,Band 5
+Stratford Olympic Park,279,Band 5
+Syon & Brentford Lock,278,Band 5
+Ilford Town,278,Band 5
+Beckenham Town & Copers Cope,278,Band 5
+Thamesfield,277,Band 5
+Westbourne,277,Band 5
+Plaistow West & Canning Town East,276,Band 5
+Bromley Town,275,Band 5
+Leyton,275,Band 5
+Catford South,274,Band 5
+Canning Town North,273,Band 5
+Abbey,272,Band 5
+Harringay,272,Band 5
+Old Kent Road,271,Band 5
+Welsh Harp,271,Band 5
+Streatham Hill West & Thornton,269,Band 5
+Abbey Road,268,Band 5
+Wood End,268,Band 5
+Ponders End,268,Band 5
+Downham,266,Band 5
+Haverstock,266,Band 5
+Churchfields,265,Band 5
+East Finchley,264,Band 5
+Blackwall & Cubitt Town,264,Band 5
+Mortlake & Barnes Common,264,Band 5
+Camberwell Green,264,Band 5
+Valley,263,Band 5
+Arsenal,263,Band 5
+Mill Hill,262,Band 5
+Fulham Reach,262,Band 5
+South Croydon,261,Band 5
+Haselbury,261,Band 5
+Jubilee,261,Band 5
+Stanley,260,Band 5
+Queensbury,259,Band 5
+Bromley North,258,Band 5
+St Mary Cray,258,Band 5
+East Acton,258,Band 5
+Perivale,258,Band 5
+Golborne,258,Band 5
+Eltham Town & Avery Hill,257,Band 5
+Feltham North,257,Band 5
+Stanmore,257,Band 5
+Wanstead Village,257,Band 5
+Abbey Wood,256,Band 5
+Wandsworth Common,256,Band 5
+Brunswick Park,256,Band 5
+Barnet Vale,255,Band 5
+Clapham Common & Abbeville,255,Band 5
+Heston West,255,Band 5
+Eastbury,255,Band 5
+High Street,255,Band 5
+Peckham,255,Band 5
+Fortis Green,254,Band 5
+Woolwich Arsenal,253,Band 5
+Clissold,253,Band 5
+Stoke Newington,253,Band 5
+Queen's Park,251,Band 5
+Roehampton,251,Band 5
+West Putney,251,Band 5
+Ealing Broadway,251,Band 5
+Osterley & Spring Grove,251,Band 5
+Seven Kings,250,Band 5
+New Cross Gate,248,Band 5
+Woolwich Common,248,Band 5
+Camden Town,246,Band 5
+Falconbrook,246,Band 5
+Kingston Town,246,Band 5
+Tottenham Hale,244,Band 5
+Norwood Green,244,Band 5
+Belmont,244,Band 5
+Plaistow South,243,Band 5
+Tufnell Park,243,Band 5
+Highbury,243,Band 5
+Arnos Grove,243,Band 5
+Canonbury,242,Band 5
+Barnsbury,242,Band 5
+College Park & Old Oak,242,Band 5
+Telegraph Hill,241,Band 5
+Carterhatch,240,Band 5
+Cann Hall,239,Band 4
+Feltham West,239,Band 4
+Hornsey,239,Band 4
+Surrey Docks,238,Band 4
+Courtfield,237,Band 4
+Garden Suburb,237,Band 4
+Goose Green,237,Band 4
+Pembridge,237,Band 4
+Harrow Road,235,Band 4
+East Sheen,235,Band 4
+Walham Green,235,Band 4
+White Hart Lane,234,Band 4
+Munster,234,Band 4
+Queen's Gate,234,Band 4
+Hanworth Village,234,Band 4
+Brixton Rush Common,233,Band 4
+Little Venice,232,Band 4
+Plaistow North,231,Band 4
+St Martin's,231,Band 4
+West Drayton,231,Band 4
+Norbury & Pollards Hill,230,Band 4
+Chislehurst,230,Band 4
+Shacklewell,230,Band 4
+South Norwood,229,Band 4
+Forest Hill,229,Band 4
+Holland,229,Band 4
+Caledonian,229,Band 4
+Colham & Cowley,229,Band 4
+Plumstead Common,227,Band 4
+Woolwich Dockyard,226,Band 4
+Streatham Common & Vale,226,Band 4
+King's Park,225,Band 4
+Knight's Hill,225,Band 4
+Royal Hospital,224,Band 4
+Woodhouse,224,Band 4
+Stroud Green,224,Band 4
+Mildmay,223,Band 4
+Wandle,223,Band 4
+Kew,223,Band 4
+Tooting Bec,223,Band 4
+Woodberry Down,222,Band 4
+Winchmore Hill,222,Band 4
+Ladywell,221,Band 4
+Greenwich Creekside,221,Band 4
+Belvedere,221,Band 4
+Vauxhall,220,Band 4
+Loxford,220,Band 4
+Erith,220,Band 4
+Custom House,219,Band 4
+Walpole,218,Band 4
+Furzedown,218,Band 4
+East Greenwich,218,Band 4
+Roxeth,217,Band 4
+Shadwell,216,Band 4
+Grove,216,Band 4
+Leytonstone,216,Band 4
+Kentish Town South,216,Band 4
+Crofton Park,215,Band 4
+West Green,215,Band 4
+South Ruislip,214,Band 4
+Heston Central,214,Band 4
+Rush Green & Crowlands,213,Band 4
+Vincent Square,213,Band 4
+Beckton,212,Band 4
+St Edward's,212,Band 4
+Royal Victoria,212,Band 4
+Fulham Town,212,Band 4
+Cockfosters,212,Band 4
+Bush Hill Park,212,Band 4
+Whetstone,211,Band 4
+Little Ilford,211,Band 4
+Orpington,211,Band 4
+Lee Green,211,Band 4
+Whalebone,211,Band 4
+East Barnet,210,Band 4
+St Dunstan's,210,Band 4
+Barnes,210,Band 4
+Boleyn,209,Band 4
+Kenton,209,Band 4
+Trinity,208,Band 4
+Kelsey & Eden Park,208,Band 4
+Valence,208,Band 4
+Farringdon Without,208,Band 4
+Harrow Weald,208,Band 4
+Alperton,208,Band 4
+Cricket Green,206,Band 4
+Cranford,206,Band 4
+Hounslow West,206,Band 4
+Northolt Mandeville,206,Band 4
+Greenford Broadway,205,Band 4
+Goodmayes,205,Band 4
+Barking Riverside,203,Band 4
+Thornton Heath,203,Band 4
+Hounslow Central,202,Band 4
+North Greenford,202,Band 4
+Stepney Green,202,Band 4
+Harold Wood,201,Band 4
+Bedfont,201,Band 4
+Blackheath Westcombe,201,Band 4
+Edgwarebury,201,Band 4
+Palmers Green,201,Band 4
+Bullsmoor,201,Band 4
+Clementswood,201,Band 4
+Larkswood,200,Band 4
+West Hill,200,Band 4
+Bruce Castle,200,Band 4
+Northwood,199,Band 4
+Belmore,199,Band 4
+West Kensington,198,Band 4
+Thamesmead East,198,Band 4
+East Ham South,198,Band 4
+Lewisham Central,198,Band 4
+Dulwich Village,196,Band 4
+Pitshanger,196,Band 4
+Crystal Palace & Anerley,196,Band 4
+Manor Park,195,Band 4
+Wimbledon Park,195,Band 4
+Aldborough,194,Band 4
+Colindale South,194,Band 4
+St Ann's,194,Band 4
+St George's,194,Band 4
+Hounslow Heath,193,Band 4
+Highfield,193,Band 4
+Frognal,192,Band 4
+Southfield,192,Band 4
+William Morris,191,Band 4
+Green Street West,190,Band 4
+Central Greenford,190,Band 4
+Mayesbrook,190,Band 4
+West Ham,189,Band 4
+Headstone,189,Band 4
+Evelyn,188,Band 4
+Clapham Park,187,Band 4
+Crystal Palace & Upper Norwood,187,Band 4
+Shaftesbury & Queenstown,187,Band 4
+Hanworth Park,187,Band 4
+Chapel End,185,Band 3
+Marshalls & Rise Park,185,Band 3
+Stockwell East,185,Band 3
+Bellingham,185,Band 3
+Fullwell,184,Band 3
+Ruislip,184,Band 3
+Seven Sisters,184,Band 3
+Beam Park,183,Band 3
+Bexleyheath,183,Band 3
+Northwood Hills,183,Band 3
+Cranbrook,182,Band 3
+Grove Park,182,Band 3
+Rainham & Wennington,182,Band 3
+Heston East,182,Band 3
+Eastcote,181,Band 3
+Chelsea Riverside,181,Band 3
+Dulwich Wood,181,Band 3
+Bromley Common & Holwood,180,Band 3
+Abingdon,180,Band 3
+Addiscombe East,179,Band 3
+Greenwich Park,179,Band 3
+St James,179,Band 3
+Teddington,179,Band 3
+Southgate,178,Band 3
+South Woodford,178,Band 3
+St Margarets & North Twickenham,178,Band 3
+Sidcup,178,Band 3
+Hammersmith Broadway,178,Band 3
+Bickley & Sundridge,178,Band 3
+Wembley Hill,177,Band 3
+Norland,177,Band 3
+Kentish Town North,177,Band 3
+Elm Park,177,Band 3
+Oval,175,Band 3
+South Balham,175,Band 3
+Chadwell,174,Band 3
+Crook Log,174,Band 3
+Cazenove,174,Band 3
+Higham Hill,174,Band 3
+Brook Green,173,Band 3
+High Barnet,173,Band 3
+Bensham Manor,172,Band 3
+Squirrels Heath,172,Band 3
+Hainault,172,Band 3
+Clock House,172,Band 3
+Wallington South,172,Band 3
+Muswell Hill,171,Band 3
+Dormers Wells,170,Band 3
+Yiewsley,170,Band 3
+Forest,170,Band 3
+Northbury,170,Band 3
+Pinner,170,Band 3
+Gipsy Hill,170,Band 3
+Slade Green & Northend,169,Band 3
+Palace & Hurlingham,169,Band 3
+Canning Town South,169,Band 3
+Notting Dale,168,Band 3
+Hampstead Town,168,Band 3
+Maryland,168,Band 3
+Brownswood,167,Band 3
+Wealdstone South,167,Band 3
+"Ham, Petersham & Richmond Riverside",165,Band 3
+North Richmond,165,Band 3
+Clayhall,165,Band 3
+Northolt West End,165,Band 3
+St Andrew's,165,Band 3
+Parsloes,165,Band 3
+Ravenscourt,164,Band 3
+Park Hill & Whitgift,164,Band 3
+Heathfield,164,Band 3
+Limehouse,163,Band 3
+Twickenham Riverside,163,Band 3
+Kidbrooke Village & Sutcliffe,163,Band 3
+Grove Green,162,Band 3
+Green Street East,162,Band 3
+Barkingside,162,Band 3
+Hounslow East,162,Band 3
+Sanderstead,161,Band 3
+Mawneys,161,Band 3
+Hampton Wick & South Teddington,161,Band 3
+Sutton Central,161,Band 3
+Myatt's Fields,161,Band 3
+Addison,160,Band 3
+Cheam,160,Band 3
+Hayes & Coney Hall,159,Band 3
+Northcote,159,Band 3
+Chadwell Heath,159,Band 3
+Lady Margaret,159,Band 3
+New Malden Village,159,Band 3
+Ridgeway,159,Band 3
+West Wickham,158,Band 3
+Wealdstone North,157,Band 3
+Nine Elms,156,Band 3
+Plaistow,156,Band 3
+Upminster,156,Band 3
+Kidbrooke Park,156,Band 3
+Yeading,155,Band 3
+Sands End,155,Band 3
+Colindale North,155,Band 3
+Forest Gate North,155,Band 3
+Hampton,155,Band 3
+Falconwood & Welling,155,Band 3
+Bromley South,154,Band 3
+Mayfield,154,Band 3
+Wood Street,154,Band 3
+Cathall,154,Band 3
+Wembley Central,154,Band 3
+Hampton North,154,Band 3
+Sutton South,153,Band 3
+Shortlands & Park Langley,153,Band 3
+Beam,153,Band 3
+Pinner South,153,Band 3
+Havering-atte-Bower,153,Band 3
+Streatham Hill East,153,Band 3
+Dulwich Hill,153,Band 3
+Colliers Wood,153,Band 3
+Royal Albert,152,Band 3
+Surbiton Hill,152,Band 3
+St Helier West,152,Band 3
+Raynes Park,152,Band 3
+Fairlop,152,Band 3
+Valentines,152,Band 3
+Wembley Park,152,Band 3
+Petts Wood & Knoll,150,Band 3
+Northfield,150,Band 3
+North Hanwell,149,Band 3
+Longthornton,146,Band 3
+Lavender Fields,146,Band 3
+Mottingham,145,Band 3
+Parsons Green & Sandford,145,Band 3
+Crayford,144,Band 3
+Avonmore,144,Band 3
+Sutton West & East Cheam,143,Band 3
+Norbiton,143,Band 3
+East Wickham,143,Band 3
+South Beddington & Roundshaw,143,Band 3
+Wallington North,142,Band 3
+New Southgate,142,Band 3
+Barnhill,142,Band 3
+Kingsbury,142,Band 3
+Chiswick Riverside,141,Band 3
+Dalgarno,141,Band 3
+St Alban's,141,Band 3
+Selsdon & Addington Village,141,Band 3
+Carshalton Central,140,Band 3
+West Dulwich,140,Band 3
+Beddington,140,Band 3
+Alexandra Park,140,Band 3
+St. Helen's,140,Band 3
+Grange Park,139,Band 3
+West Barnes,138,Band 3
+Graveney,137,Band 3
+Southfields,137,Band 3
+Gascoigne,137,Band 3
+Wimbledon Town & Dundonald,136,Band 3
+Farnborough & Crofton,136,Band 3
+Purley Oaks & Riddlesdown,136,Band 3
+St Mark's & Seething Wells,136,Band 3
+South Twickenham,135,Band 3
+Brentford East,135,Band 3
+The Wrythe,134,Band 3
+Bridge,134,Band 3
+Shirley North,133,Band 3
+Chelsfield,133,Band 3
+Kenton East,132,Band 3
+Longbridge,132,Band 3
+New Addington South,131,Band 3
+Harrow on the Hill,130,Band 3
+Isleworth,129,Band 2
+Camden Square,129,Band 2
+Pimlico South,129,Band 2
+Island Gardens,129,Band 2
+Peckham Rye,128,Band 2
+Coombe Vale,128,Band 2
+Hillingdon East,128,Band 2
+St Helier,127,Band 2
+Hillside,126,Band 2
+Hylands & Harrow Lodge,125,Band 2
+West Twickenham,125,Band 2
+West Thamesmead,124,Band 2
+Hatch End,124,Band 2
+Sutton North,123,Band 2
+Ickenham & South Harefield,123,Band 2
+Shooters Hill,123,Band 2
+Heath,122,Band 2
+Coombe Hill,122,Band 2
+Fulwell & Hampton Hill,122,Band 2
+Carshalton South & Clockhouse,122,Band 2
+Stonecot,121,Band 2
+Tolworth,121,Band 2
+Upper Walthamstow,121,Band 2
+Brentford West,120,Band 2
+Chingford Green,120,Band 2
+Kingston Gate,119,Band 2
+Bounds Green,119,Band 2
+Wall End,117,Band 2
+St Mary's & St James,117,Band 2
+Eltham Park & Progress,116,Band 2
+Canbury Gardens,116,Band 2
+Portsoken,116,Band 2
+Coulsdon Town,116,Band 2
+Stamford Hill West,115,Band 2
+Oakwood,114,Band 2
+Wormholt,114,Band 2
+Centenary,114,Band 2
+Marlborough,114,Band 2
+Newbury,113,Band 2
+Whitton,113,Band 2
+Kenley,113,Band 2
+Lower Morden,113,Band 2
+Goresbrook,112,Band 2
+Thamesmead Moorings,112,Band 2
+Hillingdon West,112,Band 2
+Merton Park,112,Band 2
+West Heath,110,Band 2
+Charlton Village & Riverside,110,Band 2
+Hounslow South,110,Band 2
+Becontree,109,Band 2
+Worcester Park North,108,Band 2
+Charlton Hornfair,108,Band 2
+Monkhams,108,Band 2
+Charville,107,Band 2
+Northumberland Heath,106,Band 2
+Wanstead Park,106,Band 2
+South Hornchurch,106,Band 2
+Bowes,105,Band 2
+Figge's Marsh,105,Band 2
+Streatham Wells,104,Band 2
+Eltham Page,104,Band 2
+Blendon & Penhill,103,Band 2
+Hermitage & Gardens,101,Band 2
+Alibon,101,Band 2
+Poplar,101,Band 2
+Hale End & Highams Park South,101,Band 2
+"Mottingham, Coldharbour & New Eltham",100,Band 2
+Hatch Lane & Highams Park North,99,Band 2
+White City,99,Band 2
+Preston,99,Band 2
+Underhill,99,Band 2
+Tokyngton,94,Band 2
+Ravensbury,94,Band 2
+Selsdon Vale & Forestdale,93,Band 2
+Sudbury,92,Band 2
+Rayners Lane,91,Band 2
+Northwick Park,90,Band 2
+Worcester Park South,90,Band 2
+Shirley South,90,Band 2
+Endlebury,90,Band 2
+West Harrow,89,Band 2
+Tudor,87,Band 2
+Biggin Hill,86,Band 2
+Motspur Park & Old Malden East,86,Band 2
+Champion Hill,85,Band 2
+Middle Park & Horn Park,85,Band 2
+Canons,85,Band 2
+Emerson Park,84,Band 2
+Roxbourne,84,Band 2
+Old Coulsdon,83,Band 2
+Cannon Hill,83,Band 2
+Longlands,82,Band 2
+North Harrow,81,Band 2
+Pollards Hill,81,Band 2
+Hackbridge,81,Band 2
+Lillie,79,Band 2
+Harefield Village,79,Band 2
+Cranham,76,Band 2
+New Addington North,75,Band 2
+Eastbrook & Rush Green,74,Band 2
+North Cheam,74,Band 2
+Norbury Park,73,Band 2
+Markhouse,72,Band 2
+Kenton West,70,Band 2
+Plashet,70,Band 2
+Blackfen & Lamorbey,69,Band 2
+Darwin,66,Band 2
+Cripplegate,66,Band 2
+King George's & Sunray,66,Band 2
+St Helier East,65,Band 2
+Alexandra,64,Band 2
+Thames View,64,Band 2
+Ruislip Manor,60,Band 2
+Hook & Chessington North,57,Band 2
+Berrylands,57,Band 2
+Wendell Park,56,Band 2
+Barnehurst,56,Band 2
+Green Lane & St James,55,Band 2
+Old Malden,53,Band 2
+Chessington South & Malden Rushett,53,Band 2
+Hacton,50,Band 1
+Southall West,38,Band 1
+Aldersgate,24,Band 1
+Long Ditton,9,Band 1
+Grange Hill,8,Band 1
+Stoneleigh,5,Band 1
+Waltham Cross,5,Band 1
+Rickmansworth Town,4,Band 1
+Cuddington,4,Band 1
+Waltham Abbey West,3,Band 1
+Theydon Bois with Passingford,3,Band 1
+Denham,3,Band 1
+Central,3,Band 1
+Waltham Abbey South & Rural,2,Band 1
+Ashford North and Stanwell South,2,Band 1
+Ockendon,2,Band 1
+Aveley and Uplands,2,Band 1
+Warley,2,Band 1
+Castle,2,Band 1
+Chigwell with Lambourne,2,Band 1
+Ashdown,2,Band 1
+Crockenhill and Well Hill,2,Band 1
+Tewkesbury North & Twyning,1,Band 1
+Grays Riverside,1,Band 1
+Dallow,1,Band 1
+Langley Meads,1,Band 1
+Oxton,1,Band 1
+Auriol,1,Band 1
+Chalvey,1,Band 1
+Broad Oak & the Hallingburys,1,Band 1
+Central Harbour,1,Band 1
+Somerton,1,Band 1
+Banstead Village,1,Band 1
+Dickinsons,1,Band 1
+Goffs Oak,1,Band 1
+Swanley St Mary's,1,Band 1
+Bush Fair,1,Band 1
+Alvaston North,1,Band 1
+Oatlands and Burwood Park,1,Band 1
+Hotham,1,Band 1
+East Cliff & Springbourne,1,Band 1
+Standish with Langtree,1,Band 1
+Round Green,1,Band 1
+Prittlewell,1,Band 1
+Moulsecoomb & Bevendean,1,Band 1
+Burnham,1,Band 1
+Queens Park & Central,1,Band 1
+Westerham and Crockham Hill,1,Band 1
+Downhall and Rawreth,1,Band 1
+Tattenham Corner & Preston,1,Band 1
+Ashford East,1,Band 1
+Colnbrook & Poyle,1,Band 1
+Cleeve Hill,1,Band 1
+Nonsuch,1,Band 1
+Bircham with Rudhams,1,Band 1
+Wingrove,1,Band 1
+Potters Bar Furzefield,1,Band 1
+Woodford and Weedon,1,Band 1
+Leverstock Green,1,Band 1
+Shenley,1,Band 1
+Molyneux,1,Band 1
+Leatherhead North,1,Band 1
+East Tilbury,1,Band 1
+Nork,1,Band 1
+Staines South,1,Band 1
+Sunbury Common,1,Band 1
+Bolsover South,1,Band 1
+Iver,1,Band 1
+Piccadilly,1,Band 1
+Greenstead,1,Band 1
+Molesey West,1,Band 1
+Molesey East,1,Band 1
+Roydon & Lower Nazeing,1,Band 1
+Bushey North,1,Band 1
+West Middleton,1,Band 1
+"Wilmington, Sutton-at-Hone & Hawley",1,Band 1
+Pensby and Thingwall,1,Band 1
+Sunbury East,1,Band 1
+Ashford Town,1,Band 1
+Westgate,1,Band 1
+Irchester,1,Band 1
+Basildon,1,Band 1
+Dorchester East,1,Band 1
+Buckhurst Hill East & Whitebridge,1,Band 1
+"Chipstead, Kingswood & Woodmansterne",1,Band 1
+Aldenham East,1,Band 1
+Temple Hill,1,Band 1
+Burrsville,1,Band 1
+Brentwood North,1,Band 1
+Pleck,1,Band 1
+Chalfont St Giles,1,Band 1
+Newtown,1,Band 1
+Waltham Abbey North,1,Band 1

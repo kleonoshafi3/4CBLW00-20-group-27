@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 def main():
-    input_path = Path('output_csv_files') / 'burglary_cases_with_ward.csv'
+    input_path = Path('output_csv_files') / 'burglary_cases_with_ward_cleaned.csv'
     output_counts_path = Path('output_csv_files') / 'ward_burglary_counts.csv'
     output_stats_path = Path('output_csv_files') / 'ward_burglary_stats.csv'
 

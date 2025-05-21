@@ -3,7 +3,7 @@ from pathlib import Path
 
 def main():
     # Paths
-    lookup_path = Path('data') / 'lsoa_to_ward.csv'
+    lookup_path = Path('data') / 'switching/lsoa_to_ward.csv'
     burglary_path = Path('output_csv_files') / 'burglary_cases.csv'
     output_path = Path('output_csv_files') / 'burglary_cases_with_ward.csv'
     

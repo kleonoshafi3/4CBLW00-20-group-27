@@ -1,0 +1,27 @@
+# Ignore everything
+*
+
+# But not these folders and files (whitelist)
+!output_csv_files/
+!output_csv_files/ward_temporal_analysis.csv
+!output_csv_files/ward_burglary_density.csv
+!output_csv_files/missing_wards.csv
+!output_csv_files/missing_wards_in_london.csv
+!output_csv_files/burglary_cases.csv
+!output_csv_files/burglary_cases_with_ward_cleaned.csv
+
+!statistical-gis-boundaries-london/
+
+!data_loader.py
+!data_loader_density.py
+!extract_boundaries.py
+!filter_missing_wards_in_london.py
+
+# Prevent tracking of any other files in subdirectories
+output_csv_files/*
+!output_csv_files/ward_temporal_analysis.csv
+!output_csv_files/ward_burglary_density.csv
+!output_csv_files/missing_wards.csv
+!output_csv_files/missing_wards_in_london.csv
+!output_csv_files/burglary_cases.csv
+!output_csv_files/burglary_cases_with_ward_cleaned.csv 

@@ -1,0 +1,7 @@
+Metric,Value,Dataset
+RMSE,3.5588540546928987e-13,Training
+MAE,2.8910227152162424e-13,Training
+R² Score,1.0,Training
+RMSE,4.010831769550795e-13,Test
+MAE,3.223387769801623e-13,Test
+R² Score,1.0,Test

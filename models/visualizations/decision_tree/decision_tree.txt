@@ -1,0 +1,1576 @@
+|--- Crime_Density_Rolling_3 <= 4.05
+|   |--- Crime_Density_Rolling_3 <= 1.49
+|   |   |--- Crime_Density_Rolling_3 <= 1.11
+|   |   |   |--- Crime_Density_Rolling_3 <= 0.90
+|   |   |   |   |--- r3 <= 0.08
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 0.74
+|   |   |   |   |   |   |--- ward_id_encoded <= 647.50
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.01
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 0.70
+|   |   |   |   |   |   |   |   |   |--- mean_annual_rate <= 0.05
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 3.34
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  3.34
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- mean_annual_rate >  0.05
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  0.70
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.01
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- ward_id_encoded >  647.50
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 1.18
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  1.18
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  0.74
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.06
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.87
+|   |   |   |   |   |   |   |   |--- r2 <= -0.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- r2 >  -0.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.87
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.06
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.33
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.89
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 0.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  0.78
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.89
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.33
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- r3 >  0.08
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Crime_Density_Rolling_3 >  0.90
+|   |   |   |   |--- Crime_Density_Lag_2 <= 0.39
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.34
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.98
+|   |   |   |   |   |   |   |--- r1 <= -0.04
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- r1 >  -0.04
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.98
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 0.97
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  0.97
+|   |   |   |   |   |   |   |   |--- rank_2019 <= 511.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- rank_2019 >  511.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  1.34
+|   |   |   |   |   |   |--- r2 <= -0.04
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- r2 >  -0.04
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_2 >  0.39
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.47
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.02
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 0.94
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  0.94
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.02
+|   |   |   |   |   |   |   |--- rank_2010 <= 662.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- rank_2010 >  662.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  0.47
+|   |   |   |   |   |   |--- r3 <= 0.03
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.45
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.06
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.06
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.45
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.58
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.58
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- r3 >  0.03
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.79
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.79
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- Crime_Density_Rolling_3 >  1.11
+|   |   |   |--- Crime_Density_Lag_2 <= 1.27
+|   |   |   |   |--- Crime_Density_Lag_1 <= 1.01
+|   |   |   |   |   |--- Avg_Temp_2m_Max <= 6.93
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Avg_Temp_2m_Max >  6.93
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.07
+|   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 8.42
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  8.42
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.07
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.80
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.18
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.18
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.80
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_1 >  1.01
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.50
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.27
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.63
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.14
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.14
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.63
+|   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min <= 1.87
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min >  1.87
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.27
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.20
+|   |   |   |   |   |   |   |   |--- ward_id_encoded <= 135.50
+|   |   |   |   |   |   |   |   |   |--- r2 <= -0.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- r2 >  -0.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- ward_id_encoded >  135.50
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 24.98
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  24.98
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.20
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.38
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.38
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  1.50
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.51
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.38
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.91
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.22
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.22
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 6.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  6.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.91
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 1.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  1.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.38
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.43
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.43
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.51
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.37
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.35
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.35
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.79
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.79
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.37
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.84
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.93
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.93
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.84
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.67
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.67
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Crime_Density_Lag_2 >  1.27
+|   |   |   |   |--- Crime_Density_Lag_1 <= 0.71
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.72
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.24
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.47
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.47
+|   |   |   |   |   |   |   |   |--- Month_Num <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Month_Num >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.24
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.26
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.26
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  1.72
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.44
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.92
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.27
+|   |   |   |   |   |   |   |   |   |--- rank_2007 <= 465.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- rank_2007 >  465.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.27
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.92
+|   |   |   |   |   |   |   |   |--- r1 <= -0.03
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- r1 >  -0.03
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.44
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.93
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.93
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_1 >  0.71
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.42
+|   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 4.45
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.40
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.40
+|   |   |   |   |   |   |   |   |--- r3 <= -0.02
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- r3 >  -0.02
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Avg_Precipitation_Sum >  4.45
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.42
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.05
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.76
+|   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 22.63
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  22.63
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.76
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.05
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.34
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.34
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |--- Crime_Density_Rolling_3 >  1.49
+|   |   |--- Crime_Density_Rolling_3 <= 2.26
+|   |   |   |--- Crime_Density_Lag_2 <= 1.97
+|   |   |   |   |--- Crime_Density_Lag_1 <= 2.68
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.78
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.80
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.46
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.85
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 3.16
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  3.16
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.85
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.53
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.53
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.46
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.50
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.55
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.55
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.50
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.65
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.65
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 1.59
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  1.59
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.80
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.04
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.97
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.58
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.58
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.97
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.38
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.38
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.04
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.65
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.65
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.27
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.27
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.78
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.55
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.55
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.18
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.18
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.86
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.84
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.31
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.31
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.84
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.62
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.62
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.86
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.53
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.53
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.77
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.77
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_1 >  2.68
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.94
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.97
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.98
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 1.43
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  1.43
+|   |   |   |   |   |   |   |   |   |--- mean_annual_rate <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- mean_annual_rate >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.98
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.52
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.38
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.38
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.52
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.97
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.94
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.62
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.47
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.37
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 1.31
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  1.31
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.37
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.47
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.13
+|   |   |   |   |   |   |   |   |   |--- predicted_rank_2024 <= 481.40
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- predicted_rank_2024 >  481.40
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.13
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 2.28
+|   |   |   |   |   |   |   |   |   |   |--- rank_est_2024 <= 460.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- rank_est_2024 >  460.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  2.28
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min <= 13.04
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min >  13.04
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.62
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.95
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.25
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.08
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.08
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.25
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.95
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Crime_Density_Lag_2 >  1.97
+|   |   |   |   |--- Crime_Density_Lag_1 <= 1.32
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.71
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.89
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.72
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.54
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.48
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.48
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.54
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded <= 594.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded >  594.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.72
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 1.90
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  1.90
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.80
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.80
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.89
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.26
+|   |   |   |   |   |   |   |   |--- r3 <= -0.02
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- r3 >  -0.02
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.26
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.71
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.10
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.75
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.89
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.89
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.75
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 3.10
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  3.10
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.10
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.93
+|   |   |   |   |   |   |   |   |--- imd_est_2024 <= 25.82
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- imd_est_2024 >  25.82
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.93
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.34
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.95
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.95
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.65
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.65
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.34
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 22.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  22.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_1 >  1.32
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.87
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.06
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.79
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.79
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.06
+|   |   |   |   |   |   |   |--- r1 <= -0.05
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- r1 >  -0.05
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.87
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.15
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.99
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 1.99
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.58
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.86
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.86
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.58
+|   |   |   |   |   |   |   |   |   |   |--- 2019 <= 8.96
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- 2019 >  8.96
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  1.99
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 0.72
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  0.72
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.99
+|   |   |   |   |   |   |   |   |--- rank_2019 <= 50.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- rank_2019 >  50.50
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded <= 648.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded >  648.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.15
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.78
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.12
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.28
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Daylight_Duration <= 35980.91
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Daylight_Duration >  35980.91
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.12
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.60
+|   |   |   |   |   |   |   |   |   |   |--- 2007 <= 35.08
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- 2007 >  35.08
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.60
+|   |   |   |   |   |   |   |   |   |   |--- 2015 <= 35.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- 2015 >  35.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.78
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- Crime_Density_Rolling_3 >  2.26
+|   |   |   |--- Crime_Density_Rolling_3 <= 3.25
+|   |   |   |   |--- Crime_Density_Lag_1 <= 3.81
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.46
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.47
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.74
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.91
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.34
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.99
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.99
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.91
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.24
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.74
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.22
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.22
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.47
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 0.89
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.69
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.30
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.30
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 25.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  25.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.69
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.47
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.47
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  0.89
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.58
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.69
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.69
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.58
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.04
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.43
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.43
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.04
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  3.46
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.73
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.89
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.52
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.41
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.52
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.54
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.54
+|   |   |   |   |   |   |   |   |   |   |--- 2007 <= 23.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- 2007 >  23.82
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.89
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.40
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.55
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.55
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.10
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.10
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.40
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.73
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.78
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.99
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.25
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.25
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 7.06
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  7.06
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.99
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.03
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min <= 13.33
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min >  13.33
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.03
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.78
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.05
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 5.47
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 2.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  2.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  5.47
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.15
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.15
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.05
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.18
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 2.66
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  2.66
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.18
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Crime_Density_Lag_1 >  3.81
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.27
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 6.10
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.61
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.17
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.80
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.80
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.17
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.52
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Daylight_Duration <= 52461.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Daylight_Duration >  52461.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.52
+|   |   |   |   |   |   |   |   |   |   |--- ward_id_encoded <= 214.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- ward_id_encoded >  214.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.61
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  0.50
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.33
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 8.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  8.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  5.33
+|   |   |   |   |   |   |   |   |   |   |--- predicted_rank_2024 <= 226.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- predicted_rank_2024 >  226.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  6.10
+|   |   |   |   |   |   |   |--- rank_2019 <= 403.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- rank_2019 >  403.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  2.27
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 2.96
+|   |   |   |   |   |   |   |--- r1 <= 0.03
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 0.58
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  0.58
+|   |   |   |   |   |   |   |   |   |--- r1 <= -0.05
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- r1 >  -0.05
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- r1 >  0.03
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  2.96
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.74
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.21
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 3.84
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  3.84
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.21
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 3.76
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  3.76
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 3.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  3.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.74
+|   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min <= 12.84
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min >  12.84
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Crime_Density_Rolling_3 >  3.25
+|   |   |   |   |--- Crime_Density_Lag_1 <= 2.83
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.25
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.34
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 2.49
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  2.49
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.34
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.42
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.97
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.97
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.42
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.61
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.11
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.11
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 3.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  3.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.61
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 4.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  4.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  4.25
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 7.77
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.82
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.97
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 5.98
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  5.98
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.97
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.19
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.19
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.82
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.83
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 5.56
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  5.56
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 0.47
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  0.47
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.83
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.81
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.81
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  7.77
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_1 >  2.83
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.15
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.46
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 3.28
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.65
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 4.94
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  4.94
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.65
+|   |   |   |   |   |   |   |   |   |--- Month_Num <= 9.50
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.42
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.42
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Month_Num >  9.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  3.28
+|   |   |   |   |   |   |   |   |--- imd_est_2024 <= 48.06
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- imd_est_2024 >  48.06
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.46
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.18
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.64
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 1.25
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  1.25
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.64
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  5.18
+|   |   |   |   |   |   |   |   |--- 2019 <= 8.81
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- 2019 >  8.81
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 6.24
+|   |   |   |   |   |   |   |   |   |   |--- r2 <= -0.04
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- r2 >  -0.04
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  6.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  2.15
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 5.06
+|   |   |   |   |   |   |   |--- r2 <= -0.02
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.28
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.12
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.12
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 6.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  6.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.28
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.91
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.28
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.28
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.91
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.67
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.67
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- r2 >  -0.02
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.77
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.71
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 1.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  1.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.71
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.77
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.26
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.26
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  5.06
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.70
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.61
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 3.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.61
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  3.70
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.74
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.87
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 4.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  4.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.87
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.74
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|--- Crime_Density_Rolling_3 >  4.05
+|   |--- Crime_Density_Rolling_3 <= 5.75
+|   |   |--- Crime_Density_Lag_2 <= 5.28
+|   |   |   |--- Crime_Density_Lag_1 <= 5.25
+|   |   |   |   |--- Crime_Density_Rolling_3 <= 4.35
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.95
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 5.02
+|   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 26.64
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 6.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  6.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  26.64
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  5.02
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  3.95
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.21
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.21
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.72
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 2.93
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  2.93
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.72
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 1.71
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  1.71
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Crime_Density_Rolling_3 >  4.35
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.84
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.53
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.47
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.09
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  5.09
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.47
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.28
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.28
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.53
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  4.84
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.79
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.79
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.73
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 5.24
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  5.24
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.73
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 2.92
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  2.92
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |--- Crime_Density_Lag_1 >  5.25
+|   |   |   |   |--- Crime_Density_Rolling_3 <= 4.65
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.69
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 6.46
+|   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 9.86
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  9.86
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  6.46
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 9.85
+|   |   |   |   |   |   |   |   |--- ward_id_encoded <= 652.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- ward_id_encoded >  652.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  9.85
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  2.69
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 7.53
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.89
+|   |   |   |   |   |   |   |   |--- pct_change_2007_2019 <= 28.10
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 7.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  7.20
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 8.71
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  8.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- pct_change_2007_2019 >  28.10
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.89
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  7.53
+|   |   |   |   |   |   |   |--- 2007 <= 21.04
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- 2007 >  21.04
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Rolling_3 >  4.65
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 7.55
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.08
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.82
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 3.58
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 1.82
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  1.82
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  3.58
+|   |   |   |   |   |   |   |   |   |--- Avg_Daylight_Duration <= 33989.59
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Daylight_Duration >  33989.59
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.82
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 7.37
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  7.37
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.08
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.29
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.62
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 10.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  10.88
+|   |   |   |   |   |   |   |   |   |   |--- rank_2019 <= 116.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- rank_2019 >  116.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  5.62
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.18
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.18
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.29
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 6.87
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  6.87
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  7.55
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 10.58
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.65
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 2.08
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 8.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  8.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  2.08
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.55
+|   |   |   |   |   |   |   |   |   |   |--- r2 <= -0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- r2 >  -0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.55
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.65
+|   |   |   |   |   |   |   |   |--- 2007 <= 21.05
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- 2007 >  21.05
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  10.58
+|   |   |   |   |   |   |   |--- mean_annual_rate <= -0.01
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- mean_annual_rate >  -0.01
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- Crime_Density_Lag_2 >  5.28
+|   |   |   |--- Crime_Density_Lag_1 <= 3.47
+|   |   |   |   |--- Crime_Density_Rolling_3 <= 4.50
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.65
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.49
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.19
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.19
+|   |   |   |   |   |   |   |   |--- ward_id_encoded <= 495.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- ward_id_encoded >  495.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.49
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  6.65
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 7.88
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  7.88
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 2.03
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  2.03
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Rolling_3 >  4.50
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 7.06
+|   |   |   |   |   |   |--- r2 <= -0.03
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.64
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.64
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.69
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.69
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- r2 >  -0.03
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.36
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.36
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  7.06
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.20
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 10.04
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 1.30
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  1.30
+|   |   |   |   |   |   |   |   |   |--- rank_2010 <= 611.50
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 3.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  3.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- rank_2010 >  611.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  10.04
+|   |   |   |   |   |   |   |   |--- rank_2010 <= 382.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- rank_2010 >  382.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.20
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 8.83
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  8.83
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 3.47
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  3.47
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- Crime_Density_Lag_1 >  3.47
+|   |   |   |   |--- Crime_Density_Rolling_3 <= 5.28
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 6.96
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 7.53
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.12
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.15
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.13
+|   |   |   |   |   |   |   |   |   |   |--- r1 <= -0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- r1 >  -0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.13
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.15
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 7.29
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  7.29
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.12
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.40
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.40
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.12
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.12
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  7.53
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 4.70
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  4.70
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.23
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 5.10
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  5.10
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  5.23
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  6.96
+|   |   |   |   |   |   |--- pct_change_2007_2019 <= -15.59
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- pct_change_2007_2019 >  -15.59
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Crime_Density_Rolling_3 >  5.28
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.85
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 7.27
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 5.62
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 5.89
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  5.89
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  5.62
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.35
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.35
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  7.27
+|   |   |   |   |   |   |   |--- r3 <= -0.04
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- r3 >  -0.04
+|   |   |   |   |   |   |   |   |--- imd_est_2024 <= 11.25
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- imd_est_2024 >  11.25
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  5.85
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 8.31
+|   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 18.65
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  18.65
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 8.35
+|   |   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 26.14
+|   |   |   |   |   |   |   |   |   |   |--- mean_annual_rate <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- mean_annual_rate >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  26.14
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  8.35
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  8.31
+|   |   |   |   |   |   |   |--- class: 0
+|   |--- Crime_Density_Rolling_3 >  5.75
+|   |   |--- Crime_Density_Rolling_3 <= 7.37
+|   |   |   |--- Crime_Density_Lag_2 <= 7.06
+|   |   |   |   |--- Crime_Density_Lag_1 <= 9.69
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 8.24
+|   |   |   |   |   |   |--- r2 <= -0.05
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 6.08
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 5.02
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  5.02
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded <= 518.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded >  518.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  6.08
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- r2 >  -0.05
+|   |   |   |   |   |   |   |--- r1 <= 0.04
+|   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 27.24
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 2.45
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.43
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.43
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  2.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  27.24
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- r1 >  0.04
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  8.24
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 6.30
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.88
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 6.66
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  6.66
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.88
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  6.30
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.23
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.23
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- Crime_Density_Lag_1 >  9.69
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.88
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 12.73
+|   |   |   |   |   |   |   |--- imd_est_2024 <= 46.04
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 4.40
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  4.40
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded <= 220.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- ward_id_encoded >  220.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- imd_est_2024 >  46.04
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  12.73
+|   |   |   |   |   |   |   |--- 2007 <= 16.46
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- 2007 >  16.46
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  4.88
+|   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 5.05
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  5.05
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 11.01
+|   |   |   |   |   |   |   |   |--- mean_annual_rate <= -0.03
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- mean_annual_rate >  -0.03
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  11.01
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- Crime_Density_Lag_2 >  7.06
+|   |   |   |   |--- Crime_Density_Lag_1 <= 6.72
+|   |   |   |   |   |--- Crime_Density_Lag_2 <= 10.27
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 6.20
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 4.12
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 9.01
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  9.01
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  4.12
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 8.01
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 5.86
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 5.98
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  5.98
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  5.86
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  8.01
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 5.96
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  5.96
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  6.20
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 4.16
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  4.16
+|   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 26.04
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  26.04
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 6.61
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  6.61
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_2 >  10.27
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 3.64
+|   |   |   |   |   |   |   |--- 2010 <= 37.32
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- 2010 >  37.32
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  3.64
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 <= 6.04
+|   |   |   |   |   |   |   |   |--- pct_change_2007_2019 <= -23.62
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- pct_change_2007_2019 >  -23.62
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_12 >  6.04
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 12.21
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 6.74
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  6.74
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 10.72
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  10.72
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  12.21
+|   |   |   |   |   |   |   |   |   |--- mean_annual_rate <= -0.02
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- mean_annual_rate >  -0.02
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Crime_Density_Lag_1 >  6.72
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 6.67
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 8.26
+|   |   |   |   |   |   |   |--- rank_2015 <= 100.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- rank_2015 >  100.00
+|   |   |   |   |   |   |   |   |--- 2015 <= 10.16
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- 2015 >  10.16
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  8.26
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  6.67
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 8.09
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 8.76
+|   |   |   |   |   |   |   |   |--- r3 <= -0.04
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- r3 >  -0.04
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  8.76
+|   |   |   |   |   |   |   |   |--- rank_est_2024 <= 419.00
+|   |   |   |   |   |   |   |   |   |--- rank_2019 <= 148.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- rank_2019 >  148.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- rank_est_2024 >  419.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  8.09
+|   |   |   |   |   |   |   |--- predicted_rank_2024 <= 559.90
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 4.11
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min <= 9.81
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Min >  9.81
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Avg_Precipitation_Hours >  4.11
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- predicted_rank_2024 >  559.90
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- Crime_Density_Rolling_3 >  7.37
+|   |   |   |--- Crime_Density_Rolling_3 <= 10.10
+|   |   |   |   |--- Crime_Density_Lag_2 <= 13.69
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 12.57
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 10.37
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 10.36
+|   |   |   |   |   |   |   |   |--- r2 <= -0.06
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 7.93
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  7.93
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- r2 >  -0.06
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  10.36
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 7.58
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 6.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  6.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  7.58
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 8.91
+|   |   |   |   |   |   |   |   |   |   |--- r2 <= 0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- r2 >  0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  8.91
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 8.54
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  8.54
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  10.37
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 8.37
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 <= 6.97
+|   |   |   |   |   |   |   |   |   |--- r3 <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 7.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  7.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- r3 >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_6 >  6.97
+|   |   |   |   |   |   |   |   |   |--- 2010 <= 2.12
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- 2010 >  2.12
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 <= 16.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_3 >  16.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  8.37
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 8.79
+|   |   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 18.94
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  18.94
+|   |   |   |   |   |   |   |   |   |   |--- predicted_rank_2024 <= 422.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- predicted_rank_2024 >  422.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  8.79
+|   |   |   |   |   |   |   |   |   |--- Monthly_Weather_Code <= 57.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Monthly_Weather_Code >  57.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  12.57
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 8.65
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 17.68
+|   |   |   |   |   |   |   |   |--- Month_Num <= 9.50
+|   |   |   |   |   |   |   |   |   |--- rank_2019 <= 86.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- rank_2019 >  86.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Month_Num >  9.50
+|   |   |   |   |   |   |   |   |   |--- rank_2007 <= 490.00
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 8.32
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  8.32
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- rank_2007 >  490.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  17.68
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_2 >  8.65
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 9.84
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 13.10
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  13.10
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  9.84
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- Crime_Density_Lag_2 >  13.69
+|   |   |   |   |   |--- Crime_Density_Lag_1 <= 7.30
+|   |   |   |   |   |   |--- ward_id_encoded <= 67.00
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 9.13
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  9.13
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- ward_id_encoded >  67.00
+|   |   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 1.24
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Avg_Precipitation_Sum >  1.24
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Crime_Density_Lag_1 >  7.30
+|   |   |   |   |   |   |--- Avg_Precipitation_Hours <= 4.29
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 <= 9.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Crime_Density_Rolling_3 >  9.50
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Avg_Precipitation_Hours >  4.29
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 15.34
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  15.34
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- Crime_Density_Rolling_3 >  10.10
+|   |   |   |   |--- 2007 <= 0.00
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- 2007 >  0.00
+|   |   |   |   |   |--- Crime_Density_Rolling_3 <= 12.80
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 19.98
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 16.22
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 17.04
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max <= 23.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Avg_Temp_2m_Max >  23.01
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 15.34
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  15.34
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  17.04
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 11.63
+|   |   |   |   |   |   |   |   |   |   |--- ward_id_encoded <= 464.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- ward_id_encoded >  464.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  11.63
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  16.22
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 13.89
+|   |   |   |   |   |   |   |   |   |--- 2015 <= 120.39
+|   |   |   |   |   |   |   |   |   |   |--- Month_Num <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Month_Num >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- 2015 >  120.39
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  13.89
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Crime_Density_Lag_1 >  19.98
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 10.41
+|   |   |   |   |   |   |   |   |--- imd_est_2024 <= 20.30
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- imd_est_2024 >  20.30
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  10.41
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Crime_Density_Rolling_3 >  12.80
+|   |   |   |   |   |   |--- Avg_Precipitation_Sum <= 0.38
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- Avg_Precipitation_Sum >  0.38
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 <= 58.87
+|   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max <= 27.31
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 29.16
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  29.16
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 <= 29.49
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Crime_Density_Lag_2 >  29.49
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Avg_Wind_Speed_10m_Max >  27.31
+|   |   |   |   |   |   |   |   |   |--- rank_2010 <= 231.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- rank_2010 >  231.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Crime_Density_Lag_1 >  58.87
+|   |   |   |   |   |   |   |   |--- class: 2

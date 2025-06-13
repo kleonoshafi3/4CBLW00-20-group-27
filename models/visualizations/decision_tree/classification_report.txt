@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+   Low Crime       0.92      0.93      0.92      1890
+Medium Crime       0.85      0.85      0.85      1847
+  High Crime       0.92      0.91      0.92      1583
+
+    accuracy                           0.89      5320
+   macro avg       0.90      0.90      0.90      5320
+weighted avg       0.89      0.89      0.89      5320

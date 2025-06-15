@@ -193,17 +193,22 @@ try:
     # Define features
     lag_features = [f'Crime_Density_Lag_{lag}' for lag in [1, 2, 3]]
     rolling_features = [f'Crime_Density_Rolling_{window}' for window in [3, 6, 12]]
-    weather_features = ['Monthly_Weather_Code', 'Avg_Temp_2m_Min', 'Avg_Temp_2m_Max', 
-                       'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration', 
-                       'Avg_Precipitation_Sum', 'Avg_Precipitation_Hours']
-    imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019', 
-                    'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
-                    'predicted_rank_2024', 'predicted_rank_2024_int', 'r1', 'r2', 'r3',
-                    'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
+    # weather_features = ['Monthly_Weather_Code', 'Avg_Temp_2m_Min', 'Avg_Temp_2m_Max',
+    #                    'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration',
+    #                    'Avg_Precipitation_Sum', 'Avg_Precipitation_Hours']
+    # imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019',
+    #                 'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
+    #                 'predicted_rank_2024', 'predicted_rank_2024_int', 'r1', 'r2', 'r3',
+    #                 'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
+    weather_features = ['Avg_Temp_2m_Min',
+                       'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration',
+                       'Avg_Precipitation_Hours']
+    imd_features = ['pct_change_2007_2019',
+                    'imd_est_2024', 'rank_est_2024', 'r1', 'r2', 'r3',]
 
     # Filter features to only include those that exist in the dataset
     available_features = df_train.columns.tolist()
-    features = ['ward_id_encoded', 'Year', 'Month_Num'] + lag_features + rolling_features
+    features = ['ward_id_encoded', 'Year', 'Month_Num'] + lag_features #+ rolling_features
     features.extend([f for f in weather_features + imd_features if f in available_features])
 
     print("Using features:", features)

@@ -65,24 +65,23 @@ def create_lag_features(df, lag_periods=[1, 2, 3]):
         print(df.info())
         raise
 
+    # Create rolling means for different windows
 def create_rolling_features(df, windows=[3, 6, 12]):
-    """Create rolling window features for crime density"""
-    try:
+        """
+        Create rolling-mean features for crime density using only past data.
+        """
+        # Sort so shift/rolling lines up correctly
         df = df.sort_values(['ward_id', 'Year', 'Month_Num'])
+        
         for ward in df['ward_id'].unique():
-            ward_mask = df['ward_id'] == ward
+            mask = df['ward_id'] == ward
+            series = df.loc[mask, 'crime_density_per_km2']
             for window in windows:
-                df.loc[ward_mask, f'Crime_Density_Rolling_{window}'] = (
-                    df.loc[ward_mask, 'crime_density_per_km2']
-                    .rolling(window=window, min_periods=1)
-                    .mean()
-                )
+                # shift first, then rolling → only past months included
+                rolled = series.shift(1).rolling(window=window, min_periods=1).mean()
+                df.loc[mask, f'Crime_Density_Rolling_{window}'] = rolled
         return df
-    except Exception as e:
-        print(f"Error in create_rolling_features: {str(e)}")
-        print("DataFrame info:")
-        print(df.info())
-        raise
+
 
 try:
     # Load and prepare data
@@ -183,10 +182,10 @@ try:
     weather_features = ['Monthly_Weather_Code', 'Avg_Temp_2m_Min', 'Avg_Temp_2m_Max', 
                        'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration', 
                        'Avg_Precipitation_Sum', 'Avg_Precipitation_Hours']
-    imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019', 
-                    'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
-                    'predicted_rank_2024', 'predicted_rank_2024_int', 'r1', 'r2', 'r3',
-                    'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
+    imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019',
+                        'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
+                        'r1', 'r2', 'r3',
+                        'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
 
     # Filter features to only include those that exist in the dataset
     available_features = df_train.columns.tolist()

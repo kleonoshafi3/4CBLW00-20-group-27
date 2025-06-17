@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import os
@@ -78,6 +79,8 @@ try:
     # Extract year and numeric month
     df['Year'] = df['Month'].dt.year
     df['Month_Num'] = df['Month'].dt.month
+    df['month_sin'] = np.sin(2 * np.pi * df['Month_Num'] / 12)
+    df['month_cos'] = np.cos(2 * np.pi * df['Month_Num'] / 12)
     print(f"Year range: {df['Year'].min()} to {df['Year'].max()}")
 
     # Create output directories
@@ -85,15 +88,19 @@ try:
     print(f"Visualizations will be saved to: {viz_dir}")
     print(f"Model will be saved to: {model_dir}")
 
-    # Sort data by time first
-    df = df.sort_values(['Month', 'ward_id'])
-    
-    # Calculate the split point for 70-30 split
-    split_idx = int(len(df) * 0.7)
-    
-    # Split the data temporally
-    df_train = df.iloc[:split_idx].copy()
-    df_test = df.iloc[split_idx:].copy()
+    # 1) Get the sorted list of unique months
+    months = np.sort(df['Month'].unique())
+
+    # 2) Pick the 70%‐ile month
+    cutoff_month = months[int(len(months) * 0.7)]
+
+    # 3) Split so that train = months ≤ cutoff, test = months > cutoff
+    df_train = df[df['Month'] <= cutoff_month].copy()
+    df_test  = df[df['Month']  > cutoff_month].copy()
+
+    print("Train covers up to:", cutoff_month)
+    print("Test starts from:", df_test['Month'].min())
+
     
     print(f"Training set size: {len(df_train)} ({len(df_train)/len(df)*100:.1f}%)")
     print(f"Test set size: {len(df_test)} ({len(df_test)/len(df)*100:.1f}%)")
@@ -104,37 +111,20 @@ try:
     # Create rolling means for different windows
     def create_rolling_features(df, windows=[3, 6, 12]):
         """
-        Create rolling mean features for crime density
-        Parameters:
-        -----------
-        df : pandas DataFrame
-            Input dataframe with time series data
-        windows : list
-            List of window sizes for rolling means
-        Returns:
-        --------
-        pandas DataFrame with added rolling mean features
+        Create rolling-mean features for crime density using only past data.
         """
-        try:
-            # Sort the dataframe by ward_id, Year, and Month_Num
-            df = df.sort_values(['ward_id', 'Year', 'Month_Num'])
-            
-            # Create rolling means for each ward separately
-            for ward in df['ward_id'].unique():
-                ward_mask = df['ward_id'] == ward
-                for window in windows:
-                    df.loc[ward_mask, f'Crime_Density_Rolling_{window}'] = (
-                        df.loc[ward_mask, 'crime_density_per_km2']
-                        .rolling(window=window, min_periods=1)
-                        .mean()
-                    )
-            
-            return df
-        except Exception as e:
-            print(f"Error in create_rolling_features: {str(e)}")
-            print("DataFrame info:")
-            print(df.info())
-            raise
+        # Sort so shift/rolling lines up correctly
+        df = df.sort_values(['ward_id', 'Year', 'Month_Num'])
+        
+        for ward in df['ward_id'].unique():
+            mask = df['ward_id'] == ward
+            series = df.loc[mask, 'crime_density_per_km2']
+            for window in windows:
+                # shift first, then rolling → only past months included
+                rolled = series.shift(1).rolling(window=window, min_periods=1).mean()
+                df.loc[mask, f'Crime_Density_Rolling_{window}'] = rolled
+        return df
+
 
     # Create lag features
     def create_lag_features(df, lag_periods=[1, 2, 3]):
@@ -177,6 +167,13 @@ try:
     # For test set, we need to handle the first few rows differently
     df_test = create_rolling_features(df_test)
     df_test = create_lag_features(df_test)
+
+    # Add rolling-momentum: 3-month vs 6-month rolling mean difference
+    for d in (df_train, df_test):
+        d['Rolling_Momentum_3_6'] = (
+            d['Crime_Density_Rolling_3']
+            - d['Crime_Density_Rolling_6']
+        )
     
     # Drop rows with NaN values in features
     df_train = df_train.dropna()
@@ -185,25 +182,34 @@ try:
     print(f"Training set size after feature engineering: {len(df_train)}")
     print(f"Test set size after feature engineering: {len(df_test)}")
 
-    # Encode ward_ids after split to prevent leakage
-    le = LabelEncoder()
-    df_train['ward_id_encoded'] = le.fit_transform(df_train['ward_id'])
-    df_test['ward_id_encoded'] = le.transform(df_test['ward_id'])
+    # Manual target‐encode ward_id by its historical mean crime density
+    ward_means = df_train.groupby('ward_id')['crime_density_per_km2'].mean()
+    df_train['ward_te'] = df_train['ward_id'].map(ward_means)
+    df_test ['ward_te'] = df_test ['ward_id'].map(ward_means)
 
     # Define features
     lag_features = [f'Crime_Density_Lag_{lag}' for lag in [1, 2, 3]]
     rolling_features = [f'Crime_Density_Rolling_{window}' for window in [3, 6, 12]]
-    weather_features = ['Monthly_Weather_Code', 'Avg_Temp_2m_Min', 'Avg_Temp_2m_Max', 
-                       'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration', 
-                       'Avg_Precipitation_Sum', 'Avg_Precipitation_Hours']
-    imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019', 
-                    'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
-                    'predicted_rank_2024', 'predicted_rank_2024_int', 'r1', 'r2', 'r3',
-                    'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
+    # weather_features = ['Monthly_Weather_Code', 'Avg_Temp_2m_Min', 'Avg_Temp_2m_Max',
+    #                    'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration',
+    #                    'Avg_Precipitation_Sum', 'Avg_Precipitation_Hours']
+    # imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019',
+    #                 'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
+    #                 'predicted_rank_2024', 'predicted_rank_2024_int', 'r1', 'r2', 'r3',
+    #                 'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
+    weather_features = ['Monthly_Weather_Code', 'Avg_Temp_2m_Min', 'Avg_Temp_2m_Max',
+                        'Avg_Wind_Speed_10m_Max', 'Avg_Daylight_Duration',
+                        'Avg_Precipitation_Sum', 'Avg_Precipitation_Hours']
+    imd_features = ['2007', '2010', '2015', '2019', 'pct_change_2007_2019',
+                        'rank_2007', 'rank_2010', 'rank_2015', 'rank_2019',
+                        'r1', 'r2', 'r3',
+                        'mean_annual_rate', 'imd_est_2024', 'rank_est_2024']
+    momentum_features = ['Rolling_Momentum_3_6']
+    cyclical_month   = ['month_sin', 'month_cos']
 
     # Filter features to only include those that exist in the dataset
     available_features = df_train.columns.tolist()
-    features = ['ward_id_encoded', 'Year', 'Month_Num'] + lag_features + rolling_features
+    features = ['ward_te', 'Year'] + lag_features + rolling_features + cyclical_month + momentum_features
     features.extend([f for f in weather_features + imd_features if f in available_features])
 
     print("Using features:", features)
@@ -216,12 +222,15 @@ try:
     # XGBoost + Grid Search with more conservative parameters
     print("\nStarting model training...")
     param_grid = {
-        'n_estimators': [100, 200],
-        'max_depth': [3, 4, 5],  # Reduced max depth to prevent overfitting
-        'learning_rate': [0.01, 0.05, 0.1],  # Added smaller learning rate
-        'subsample': [0.7, 0.8, 0.9],  # More aggressive subsampling
-        'colsample_bytree': [0.7, 0.8, 0.9],  # Added column sampling
-        'min_child_weight': [1, 3, 5]  # Added min_child_weight to control overfitting
+        'n_estimators':     [100, 110, 120],
+        'max_depth':        [4, 5, 6],
+        'learning_rate':    [0.11, 0.12, 0.13],
+        'subsample':        [0.6, 0.7],
+        'colsample_bytree': [0.6, 0.7, 0.8],
+        'min_child_weight': [2, 3, 4],
+        'gamma':            [0, 0.2],
+        'reg_alpha':        [0, 0.1],
+        'reg_lambda':       [1, 2]
     }
 
     xgb_model = XGBRegressor(
@@ -257,6 +266,22 @@ try:
     print("\nMaking predictions...")
     y_train_pred = best_model.predict(X_train)
     y_test_pred = best_model.predict(X_test)
+
+    # ——————————————————————————————————————————————
+    # Build a CSV of ward / year_month → predicted density
+    df_pred = df_test[['ward_id', 'Month']].copy()
+    # convert Month to “YYYY-MM” string
+    df_pred['year_month'] = df_pred['Month'].dt.to_period('M').astype(str)
+    # attach your predictions
+    df_pred['predicted_density'] = y_test_pred
+    # select & order columns exactly as requested
+    df_pred = df_pred[['ward_id', 'year_month', 'predicted_density']]
+
+    # save to CSV alongside your model outputs
+    pred_csv = os.path.join(model_dir, 'monthly_predicted_crime_density.csv')
+    df_pred.to_csv(pred_csv, index=False)
+    print(f"Predictions written to {pred_csv}")
+    # ——————————————————————————————————————————————
 
     # Evaluation Function
     def evaluate_model(y_true, y_pred, dataset_name=""):
@@ -358,12 +383,17 @@ try:
 
         # Plot and save SHAP dependence plots for top features
         top_features = feature_importance.nlargest(3, 'Importance')['Feature'].tolist()
-        for feature in top_features:
+        for feat in top_features:
             plt.figure(figsize=(10, 6))
-            shap.dependence_plot(feature, shap_values, X_test_sample_renamed, show=False)
-            plt.title(f"SHAP Dependence Plot for {feature_names[feature]}", fontsize=14, pad=20)
+            # map raw feature to its "pretty" column name
+            pretty = feature_names[feat]  
+            # call dependence_plot with the pretty name (must match X_test_sample_renamed.columns)
+            shap.dependence_plot(pretty, shap_values, X_test_sample_renamed, show=False)
+            plt.title(f"SHAP Dependence Plot for {pretty}", fontsize=14, pad=20)
             plt.tight_layout()
-            plt.savefig(os.path.join(viz_dir, f'shap_dependence_{feature}.png'), dpi=300, bbox_inches='tight')
+            # sanitize filename
+            safe = pretty.replace(' ', '_')
+            plt.savefig(os.path.join(viz_dir, f'shap_dependence_{safe}.png'), dpi=300, bbox_inches='tight')
             plt.close()
     except Exception as e:
         print(f"Warning: SHAP analysis encountered an error: {str(e)}")

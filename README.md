@@ -8,3 +8,4 @@
 4. Download geojson file of the London boroughs for 2024 from this link: https://raw.githubusercontent.com/westminsterDataStudio/open_data/main/boundary_files/boroughs_london.geojson
 5. Save downloaded file in the DATA folder
 6. Run city_burglary_dashboard.py
+7. Have fun trying all of the available features

@@ -8,9 +8,10 @@ from dash import callback_context
 import dash_bootstrap_components as dbc
 import plotly.express as px
 
+OUTPUT_DIR = Path(__file__).parent / "output_csv_files"
 # ---- 1. LOAD & PREPARE ----
-def load_and_prepare(data_dir: str):
-    data_path = Path(data_dir)
+def load_and_prepare(output_dir: str):
+    data_path = Path(output_dir)
 
     # 1) Read the single cleaned CSV
     fp = data_path / "burglary_cases_with_ward_cleaned.csv"
@@ -31,7 +32,6 @@ def load_and_prepare(data_dir: str):
     return full
 # ---- MAIN DATAFRAME ----
 DATA_DIR = Path(__file__).parent / "data"
-OUTPUT_DIR = Path(__file__).parent / "output_csv_files"
 df = load_and_prepare(str(DATA_DIR))
 last_month = df["MonthDt"].max()
 last_updated_str = last_month.strftime("%B %Y")
@@ -55,7 +55,7 @@ months = sorted(df["MonthDt"].dt.month.dropna().astype(int).unique().tolist())
 year_marks = {y: str(y) for y in years}
 month_marks = {m: str(m) for m in months}
 
-imd_fp = OUTPUT_DIR / "imd_change_2007_2019_spatial.csv"
+imd_fp = DATA_DIR / "imd_change_2007_2019_spatial.csv"
 imd_df = pd.read_csv(
     imd_fp,
     dtype={"ward_code": str, "ward_name": str, "imd_est_2024": float}
@@ -91,7 +91,7 @@ pred_df = pred_df.merge(
     on="Ward ID",
     how="left"
 )
-# 4) bring in Borough from the burglary df so we can filter by it
+# 4) bring in Borough from the burglary df to filter by it
 ward_to_boro = (
     df[["Ward ID","Borough"]]
     .drop_duplicates(subset=["Ward ID","Borough"])
@@ -108,7 +108,7 @@ app = dash.Dash(
 )
 
 valid_wards = {feat["properties"]["WD24CD"] for feat in wards_geo["features"]}
-# ---- FILTER CONTROLS (must come after df is defined) ----
+# ---- FILTER CONTROLS  ----
 filter_controls = [
 
     # Location
@@ -399,9 +399,9 @@ app.layout = dbc.Container(fluid=True, children=[
         )
       ],
       style={
-        "height": "90vh",        # fill most of viewport height
-        "overflowY": "auto",     # enable vertical scrolling
-        "paddingRight": "1rem"   # give a little breathing room
+        "height": "90vh",        
+        "overflowY": "auto",     
+        "paddingRight": "1rem"   
       }
       ),
       width=3
@@ -481,7 +481,7 @@ def update_tables(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, end_
     outcome_df = d.groupby("Last outcome category").size().reset_index(name="Count").sort_values(by="Count", ascending=False)
     return loc_df.to_dict('records'), lsoa_df.to_dict('records'), borough_df.to_dict('records'), ward_df.to_dict('records'), outcome_df.to_dict('records')
 
-from dash import Input, Output  # add this if not already imported
+from dash import Input, Output 
 
 @app.callback(
     [
@@ -504,7 +504,6 @@ from dash import Input, Output  # add this if not already imported
 )
 def update_metrics(loc_vals, lsoa_vals, borough_vals, ward_vals,
                    start_date, end_date, yols, moys, forces, outcomes):
-    # copy & apply exactly the same filters you use in your map callback:
     d = df.copy()
     if loc_vals:     d = d[d["Location"].isin(loc_vals)]
     if lsoa_vals:    d = d[d["LSOA name"].isin(lsoa_vals)]
@@ -521,13 +520,8 @@ def update_metrics(loc_vals, lsoa_vals, borough_vals, ward_vals,
         (d["MonthDt"] <= end) &
         (d["Reported by"].isin(forces))
     ]
-
-    # now compute your three metrics
     total = len(d)
-    # compute ward_count but only those wards for which you have shapes:
     ward_count = len(valid_wards & set(d["Ward ID"].dropna()))
-
-    # compute avg/month exactly as before
     start = pd.to_datetime(start_date)
     end = pd.to_datetime(end_date)
     months_span = (end.year - start.year) * 12 + (end.month - start.month) + 1
@@ -617,8 +611,6 @@ def update_ward_count(loc_vals, lsoa_vals, borough_vals, ward_vals,
       (d["MonthDt"] <= end) &
       (d["Reported by"].isin(forces))
     ]
-
-    # now intersect with the set of ward‐IDs you actually have shapes for:
     valid = { feat["properties"]["WD24CD"]
               for feat in wards_geo["features"] }
     ward_count = len( valid & set(d["Ward ID"]) )
@@ -694,12 +686,9 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
             })
             .rename(columns={"Crime ID": "Count"})
         )
-        # get one ward per LSOA (or the modal one if you prefer)
         lsoa_to_ward = (
             d[["LSOA code", "Ward Name"]]
             .drop_duplicates(subset=["LSOA code", "Ward Name"])
-            # if an LSOA maps to multiple wards,
-            # this just picks the first one it sees
             .groupby("LSOA code", as_index=False).first()
         )
         agg = agg.merge(lsoa_to_ward, on="LSOA code", how="left")
@@ -710,7 +699,7 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
             size="Count",
             color="Count",
             hover_name="LSOA name",
-            hover_data=["Count", "Ward Name"],  # ← shows ward
+            hover_data=["Count", "Ward Name"], 
             size_max=30,
             height=800,
             mapbox_style="open-street-map",
@@ -723,14 +712,13 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
         fig = px.choropleth_mapbox(
             imd_plot,
             geojson=wards_geo,
-            locations="Ward ID",  # matches your imd_df ward_code
-            featureidkey="properties.WD24CD",  # matches your 2024 wards GeoJSON
+            locations="Ward ID",  
+            featureidkey="properties.WD24CD", 
             color="imd_est_2024",
             hover_name="Ward Name",
             hover_data=["imd_est_2024"],
             mapbox_style="carto-positron",
             height=800,
-            # choose any scale you like, e.g. sequential
             color_continuous_scale=px.colors.sequential.Plasma
         )
     elif view == "boroughs":
@@ -743,15 +731,13 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
     elif view == "wards":
         view_text = "View: Ward heatmap"
         d2 = d.dropna(subset=["Ward ID", "Ward Name"])
-        # 1) count per ward + keep borough
+
         agg = (
             d2.groupby(["Ward ID", "Ward Name", "Borough"], as_index=False)
             .size()
             .rename(columns={"size": "Count"})
         )
-        # 2) define our custom yellow→orange→red scale
         scale = ["#ffffb2", "#fed976", "#fd8d3c", "#f03b20", "#bd0026"]
-        # 3) clamp the top end at the 95th percentile
         vmax = agg["Count"].quantile(0.95)
         fig = px.choropleth_mapbox(
             agg,
@@ -767,7 +753,6 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
             range_color=(0, vmax),
             color_continuous_midpoint=vmax / 2
         )
-        # 4) draw crisp white borders
         fig.update_traces(
             marker_line_width=0.5,
             marker_line_color="black",
@@ -775,8 +760,6 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
         )
     elif view == "officers":
         d_off = pred_df.copy()
-
-        # filter by UI controls exactly as you do for burglaries
         if borough_vals:
             d_off = d_off[d_off["Borough"].isin(borough_vals)]
         if ward_vals:
@@ -795,9 +778,6 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
             .groupby(["Ward ID", "Ward Name"], as_index=False)["Officers"]
             .sum()
         )
-
-        # draw a choropleth exactly like your ward‐heat,
-        # but coloring by total Officers
         fig = px.choropleth_mapbox(
             agg_off,
             geojson=wards_geo,
@@ -823,8 +803,6 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
     # --- preserve pan & zoom between updates ---
     default_center = {"lon": -0.09, "lat": 51.515}
     default_zoom   = 9
-
-    # first check for the grouped center object
     triggered = callback_context.triggered[0]["prop_id"].split(".")[0]
 
     if triggered == "reset-button":
@@ -848,8 +826,6 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
         mapbox_center={"lon": lon, "lat": lat},
         mapbox_zoom=zoom,
         margin={"l": 0, "r": 0, "t": 0, "b": 0},
-
-        # 2) Polish your hover labels
         hoverlabel=dict(
             bgcolor="white",
             font_size=12,
@@ -875,7 +851,6 @@ def update_dashboard(loc_vals, lsoa_vals, borough_vals, ward_vals, start_date, e
     prevent_initial_call=True
 )
 def reset_all_filters(n):
-    # default force selection
     default_forces = df["Reported by"].unique().tolist()
     return (
         [],     # location-dropdown

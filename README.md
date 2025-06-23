@@ -1,49 +1,60 @@
 # Project Workflow
 
 ## Overview
-This project involves extracting ward boundaries, calculating crime density, and analyzing missing ward data.
+This project predicts future crime density in London wards and uses these predictions to create an optimized police allocation strategy. The workflow involves data processing, model training and evaluation, and finally, resource allocation using an Integer Linear Programming (ILP) model.
 
-## Workflow
+## Workflow Steps
 
-### 1. Extract Boundaries
-- **Script**: `extract_boundaries.py`
-- **Purpose**: Extracts ward boundaries from the `boundaries.zip` folder and saves them into the `extracted_boundaries` folder.
-- **Process**: The script creates directories for each year (2022, 2023, 2024, 2025) and month, then copies files from the `city-of-london` and `metropolitan` subdirectories into the `extracted_boundaries` folder.
+### 1. Data Processing and Feature Engineering
+- **Primary Data File**: The `models/data/combined_monthly_imd_data.csv` file serves as the main dataset, combining crime statistics with weather and Index of Multiple Deprivation (IMD) data.
 
-### 2. Calculate Crime Density
-- **Script**: `data_loader_density.py`
-- **Purpose**: Loads ward areas from the `extracted_boundaries` folder and calculates crime density.
-- **Process**:
-  - Extracts ward areas from KML files in the `extracted_boundaries` folder.
-  - If any ward area is missing, it looks for the data in the `statistical-gis-boundaries-london` folder.
-  - Generates two CSV files:
-    - `output_csv_files/missing_wards.csv`: Lists wards with missing area data.
-  - Calculates crime density for wards with complete area data and saves the results to `output_csv_files/ward_burglary_density.csv`.
-  - Creates a temporal analysis of crime density and saves it to `output_csv_files/ward_temporal_analysis.csv`.
-  - **Note**: The file `output_csv_files/burglary_cases_with_ward_cleaned.csv` is manually added to the project to facilitate data loading for `data_loader_density.py`.
+### 2. Predictive Modeling
+- **Input Data**: All models are trained on the `models/data/combined_monthly_imd_data.csv` file.
+- **Process**: Several regression and classification models are run to predict future crime density. Each model script saves its own set of visualizations in a corresponding subdirectory within the `visualizations/` folder (e.g., `visualizations/decision_tree/`, `visualizations/random_forest/`, etc.).
+- **Objective**: To identify the best-performing model for predicting crime density.
 
-### 3. Filter Missing Wards in London
-- **Script**: `filter_missing_wards_in_london.py`
-- **Purpose**: Filters the `missing_wards.csv` file to include only wards with missing area data that are located within London.
-- **Process**: The script reads the `missing_wards.csv` file, checks against the London wards shapefile, and saves the filtered results to `output_csv_files/missing_wards_in_london.csv`.
+### Feature Engineering Strategy
 
-## Summary
-- **extract_boundaries.py** extracts boundary files from `boundaries.zip` and saves them into `extracted_boundaries`.
-- **data_loader_density.py** uses these extracted files to calculate ward areas and crime density, generating CSV files for missing wards and crime density analysis.
-- **filter_missing_wards_in_london.py** ensures that only wards with missing area data within London are included in the output file.
+**Note on Feature Engineering**: Currently, each predictive model script (e.g., `xgboost_model.py`, `decision_tree.py`, `random_forest.py`) implements its own feature engineering internally. Functions for creating lag and rolling-window features (`create_lag_features`, `create_rolling_features`) are defined within each script, leading to code duplication.
 
-## Visualizations
-- **extract_boundaries.py**: No visualizations generated.
-- **data_loader_density.py**: Generates plots for crime density per ward and temporal trends in crime density (saved as PNG files in the `visualizations/` directory).
-- **filter_missing_wards_in_london.py**: No visualizations generated.
+The `visualizations_model.py` script is a standalone tool for initial exploratory data analysis and is **not** part of the feature engineering pipeline for the predictive models.
+
+
+### 3. Selected Model: XGBoost
+The **XGBoost model** (`models/xgboost_model.py`) was selected as the best-performing model based on its superior accuracy and predictive power.
+- **Visualizations**: When run, this script generates a comprehensive set of visualizations in the `visualizations/xgboost/` directory, including:
+  - `model_performance.png`: A combined plot showing Actual vs. Predicted values, Feature Importance, and a comparison of training vs. test set metrics.
+  - `shap_summary.png` & `shap_distribution.png`: SHAP plots that explain the model's predictions.
+  - `evaluation_metrics.csv` and `feature_importance.csv`: CSV files containing detailed model performance metrics.
+- **Prediction Output**: The primary output of this model is the `monthly_predicted_crime_density.csv` file, which contains the predicted crime density for future months. This file is saved in the `models/data/` directory.
+
+### 4. Police Allocation Strategy
+- **Script**: `models/police_allocation_ilp.py`
+- **Purpose**: To determine the optimal allocation of police officers based on predicted crime density.
+- **Input**: This script uses the `models/data/monthly_predicted_crime_density.csv` file generated by the XGBoost model.
+- **Methodology**: It employs an **Integer Linear Programming (ILP)** model using the Gurobi optimizer to assign officer patrol hours across different time slots and days, maximizing effectiveness based on the crime predictions.
+- **Output**: The script generates detailed PDF reports for each ward (e.g., `ward_E05014072_report_2025_01.pdf`) in the `models/reports/` directory, outlining the recommended patrol schedule.
+
+## How to Run the Workflow
+
+1.  **Generate Predictions (Optional)**: To retrain the model and generate new predictions, run the XGBoost script:
+    ```bash
+    python models/xgboost_model_new.py
+    ```
+    This will update the `monthly_predicted_crime_density.csv` file in `models/data/`.
+
+2.  **Generate Allocation Plan**: To create a patrol plan for a specific ward and month, run the ILP script with the desired arguments:
+    ```bash
+    python models/police_allocation_ilp.py --ward_id <WARD_ID> --month <MONTH_NUMBER>
+    ```
+    For example, to generate a report for ward `E05014072` for January:
+    ```bash
+    python models/police_allocation_ilp.py --ward_id E05014072 --month 1
+    ```
 
 ## Requirements
-
 - Python 3.x
-- Required packages are listed in `requirements.txt`.
-
-## Usage
-
-1. Run `extract_boundaries.py` to generate the `extracted_boundaries` folder.
-2. Run `data_loader_density.py` to load ward areas and generate missing ward reports.
-3. Run `filter_missing_wards_in_london.py` to verify that all wards with missing areas belong outside of London.
+- All required packages are listed in `requirements.txt`. Install them using:
+  ```bash
+  pip install -r requirements.txt
+  ```

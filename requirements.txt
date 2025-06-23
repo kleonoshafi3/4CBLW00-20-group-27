@@ -2,3 +2,12 @@ geopandas
 pandas
 numpy
 matplotlib 
+reportlab
+gurobipy
+deap
+xgboost
+scikit-learn
+shap
+seaborn
+scikit-learn-intelex
+statsmodels 
